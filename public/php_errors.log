@@ -1,0 +1,25 @@
+[09-Apr-2018 12:16:44 Europe/Amsterdam] PHP Fatal error:  Uncaught Error: Call to undefined function dd() in C:\OSPanel\domains\interprises.test\public\index.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\OSPanel\domains\interprises.test\public\index.php on line 3
+[09-Apr-2018 12:16:57 Europe/Amsterdam] PHP Fatal error:  Uncaught Error: Call to undefined function dd() in C:\OSPanel\domains\interprises.test\public\index.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\OSPanel\domains\interprises.test\public\index.php on line 3
+[09-Apr-2018 12:17:21 Europe/Amsterdam] PHP Fatal error:  Uncaught Error: Call to undefined function dd() in C:\OSPanel\domains\interprises.test\public\index.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\OSPanel\domains\interprises.test\public\index.php on line 3
+[09-Apr-2018 12:17:21 Europe/Amsterdam] PHP Fatal error:  Uncaught Error: Call to undefined function dd() in C:\OSPanel\domains\interprises.test\public\index.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\OSPanel\domains\interprises.test\public\index.php on line 3
+[09-Apr-2018 11:43:18 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1040384 bytes) in C:\OSPanel\domains\interprises.test\vendor\laravel\framework\src\Illuminate\Database\Connection.php on line 330
+[09-Apr-2018 11:43:22 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1040384 bytes) in C:\OSPanel\domains\interprises.test\vendor\laravel\framework\src\Illuminate\Database\Connection.php on line 330
+[09-Apr-2018 11:43:58 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1040384 bytes) in C:\OSPanel\domains\interprises.test\vendor\laravel\framework\src\Illuminate\Database\Connection.php on line 330
+[09-Apr-2018 11:44:00 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1040384 bytes) in C:\OSPanel\domains\interprises.test\vendor\laravel\framework\src\Illuminate\Database\Connection.php on line 330
+[09-Apr-2018 11:44:02 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1040384 bytes) in C:\OSPanel\domains\interprises.test\vendor\laravel\framework\src\Illuminate\Database\Connection.php on line 330
+[09-Apr-2018 11:45:04 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1040384 bytes) in C:\OSPanel\domains\interprises.test\vendor\laravel\framework\src\Illuminate\Database\Connection.php on line 330
+[09-Apr-2018 11:46:00 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1040384 bytes) in C:\OSPanel\domains\interprises.test\vendor\laravel\framework\src\Illuminate\Database\Connection.php on line 330
+[09-Apr-2018 11:46:32 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1040384 bytes) in C:\OSPanel\domains\interprises.test\vendor\laravel\framework\src\Illuminate\Database\Connection.php on line 330
+[09-Apr-2018 11:46:42 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 1040384 bytes) in C:\OSPanel\domains\interprises.test\vendor\laravel\framework\src\Illuminate\Database\Connection.php on line 330

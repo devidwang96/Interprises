@@ -1,0 +1,11 @@
+/node_modules
+/vendor
+/interprises_parsers/parsers/bad_entity/files
+/interprises_parsers/parsers/bankrot_entity/files
+/interprises_parsers/parsers/exbankrot_entity/files
+/interprises_parsers/parsers/good_entity/files
+/interprises_parsers/parsers/legal_entity/files
+/interprises_parsers/parsers/lie_entity/files
+/interprises_parsers/parsers/old_entity/files
+/interprises_parsers/parsers/terror_entity/files
+/interprises_parsers/tmp

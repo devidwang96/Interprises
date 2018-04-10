@@ -1,0 +1,385 @@
+INFO 	 2017-05-29 14:57:27,019 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/11 was downloaded
+INFO 	 2017-05-29 14:57:29,405 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/15 was downloaded
+INFO 	 2017-05-29 14:57:31,711 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/19 was downloaded
+INFO 	 2017-05-29 14:57:33,104 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/23 was downloaded
+INFO 	 2017-05-29 14:57:34,012 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/27 was downloaded
+INFO 	 2017-05-29 14:57:34,107 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/files/stat.gov.kz/legal_entity/29.05.17/zip/27 was downloaded
+WARNING 	 2017-05-29 14:57:34,107 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/files/stat.gov.kz/legal_entity/29.05.17/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2017-05-29 14:57:35,251 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/31 was downloaded
+INFO 	 2017-05-29 14:57:37,856 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/35 was downloaded
+INFO 	 2017-05-29 14:57:39,435 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/39 was downloaded
+INFO 	 2017-05-29 14:57:40,648 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/43 was downloaded
+INFO 	 2017-05-29 14:57:41,838 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/47 was downloaded
+INFO 	 2017-05-29 14:57:45,054 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/51 was downloaded
+INFO 	 2017-05-29 14:57:47,442 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/55 was downloaded
+INFO 	 2017-05-29 14:57:52,563 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/ESTAT086130 was downloaded
+WARNING 	 2017-05-29 14:57:52,563 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2017-05-29 14:57:53,998 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/59 was downloaded
+INFO 	 2017-05-29 14:58:03,729 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/63 was downloaded
+INFO 	 2017-05-29 14:58:06,970 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/71 was downloaded
+INFO 	 2017-05-29 14:58:20,038 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/zip/75 was downloaded
+INFO 	 2017-05-29 15:00:08,554 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2017-05-29 15:00:09,294 	 download_list 	 files/stat.gov.kz/legal_entity/29.05.17/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2017-05-29 17:06:25,039 	 stat_list 	 files/stat.gov.kz/legal_entity/29.05.17/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2017-05-29 17:06:25,909 	 stat_list 	 files/stat.gov.kz/legal_entity/29.05.17/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2017-05-29 17:17:07,109 	 stat_list 	 files/stat.gov.kz/legal_entity/29.05.17/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2017-05-29 17:17:07,891 	 stat_list 	 files/stat.gov.kz/legal_entity/29.05.17/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-23 06:09:16,924 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/11 was downloaded
+INFO 	 2018-03-23 06:09:42,891 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/15 was downloaded
+INFO 	 2018-03-23 06:10:06,723 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/19 was downloaded
+INFO 	 2018-03-23 06:10:19,174 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/23 was downloaded
+INFO 	 2018-03-23 06:10:33,173 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/27 was downloaded
+INFO 	 2018-03-23 06:10:33,338 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/files/stat.gov.kz/legal_entity/23.03.18/zip/27 was downloaded
+WARNING 	 2018-03-23 06:10:33,338 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/files/stat.gov.kz/legal_entity/23.03.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-03-23 06:10:54,910 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/31 was downloaded
+INFO 	 2018-03-23 06:11:24,957 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/35 was downloaded
+INFO 	 2018-03-23 06:12:02,303 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/39 was downloaded
+INFO 	 2018-03-23 06:12:15,842 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/43 was downloaded
+INFO 	 2018-03-23 06:12:31,540 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/47 was downloaded
+INFO 	 2018-03-23 06:13:17,679 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/51 was downloaded
+INFO 	 2018-03-23 06:14:23,893 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/55 was downloaded
+INFO 	 2018-03-23 06:14:24,113 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-03-23 06:14:24,113 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-03-23 06:14:45,539 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/59 was downloaded
+INFO 	 2018-03-23 06:15:52,454 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/63 was downloaded
+INFO 	 2018-03-23 06:17:01,318 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/71 was downloaded
+INFO 	 2018-03-23 06:23:29,330 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/zip/75 was downloaded
+INFO 	 2018-03-23 07:30:35,448 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-23 07:30:35,823 	 stat_list 	 files/stat.gov.kz/legal_entity/23.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:07:49,973 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:07:49,992 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+ERROR 	 2018-03-24 08:07:50,004 	 stat_list 	 import to db error: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+INFO 	 2018-03-24 08:09:18,844 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:09:18,844 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:09:49,090 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:09:49,090 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:14:23,604 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:14:23,604 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:15:02,586 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:15:02,587 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:17:56,161 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:17:56,162 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:23:10,180 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:23:10,181 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:44:43,193 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:44:43,194 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:45:47,726 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:45:47,727 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 08:47:10,941 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/11 was downloaded
+INFO 	 2018-03-24 08:48:12,326 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/15 was downloaded
+INFO 	 2018-03-24 08:48:43,944 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/19 was downloaded
+INFO 	 2018-03-24 08:49:22,831 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/23 was downloaded
+INFO 	 2018-03-24 08:49:43,539 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/27 was downloaded
+INFO 	 2018-03-24 08:49:43,735 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/files/stat.gov.kz/legal_entity/24.03.18/zip/27 was downloaded
+WARNING 	 2018-03-24 08:49:43,735 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/files/stat.gov.kz/legal_entity/24.03.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-03-24 08:50:37,714 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/31 was downloaded
+INFO 	 2018-03-24 08:51:10,467 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/35 was downloaded
+INFO 	 2018-03-24 08:52:01,564 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/39 was downloaded
+INFO 	 2018-03-24 08:52:23,601 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/43 was downloaded
+INFO 	 2018-03-24 08:52:51,427 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/47 was downloaded
+INFO 	 2018-03-24 08:53:55,046 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/51 was downloaded
+INFO 	 2018-03-24 08:54:08,446 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/55 was downloaded
+INFO 	 2018-03-24 08:54:08,830 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-03-24 08:54:08,830 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-03-24 08:54:44,251 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/59 was downloaded
+INFO 	 2018-03-24 08:55:34,859 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/63 was downloaded
+INFO 	 2018-03-24 08:57:11,667 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/71 was downloaded
+INFO 	 2018-03-24 08:58:42,445 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/75 was downloaded
+INFO 	 2018-03-24 09:00:29,157 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 09:00:29,814 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 09:38:27,206 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/11 was downloaded
+INFO 	 2018-03-24 09:38:43,225 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/15 was downloaded
+INFO 	 2018-03-24 09:39:10,384 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/19 was downloaded
+INFO 	 2018-03-24 09:39:17,979 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/23 was downloaded
+INFO 	 2018-03-24 09:39:23,178 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/27 was downloaded
+INFO 	 2018-03-24 09:39:23,331 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/files/stat.gov.kz/legal_entity/24.03.18/zip/27 was downloaded
+WARNING 	 2018-03-24 09:39:23,331 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/files/stat.gov.kz/legal_entity/24.03.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-03-24 09:39:34,182 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/31 was downloaded
+INFO 	 2018-03-24 09:39:46,160 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/35 was downloaded
+INFO 	 2018-03-24 09:39:54,680 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/39 was downloaded
+INFO 	 2018-03-24 09:40:00,931 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/43 was downloaded
+INFO 	 2018-03-24 09:40:08,044 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/47 was downloaded
+INFO 	 2018-03-24 09:40:36,765 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/51 was downloaded
+INFO 	 2018-03-24 09:40:43,510 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/55 was downloaded
+INFO 	 2018-03-24 09:40:43,715 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-03-24 09:40:43,715 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-03-24 09:40:49,471 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/59 was downloaded
+INFO 	 2018-03-24 09:41:00,026 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/63 was downloaded
+INFO 	 2018-03-24 09:41:33,628 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/71 was downloaded
+INFO 	 2018-03-24 09:42:36,042 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/zip/75 was downloaded
+INFO 	 2018-03-24 09:44:28,307 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-24 09:44:28,964 	 stat_list 	 files/stat.gov.kz/legal_entity/24.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-30 12:41:30,218 	 stat_list 	 files/stat.gov.kz/legal_entity/30.03.18/zip/11 was downloaded
+INFO 	 2018-03-30 12:41:32,375 	 stat_list 	 files/stat.gov.kz/legal_entity/30.03.18/zip/15 was downloaded
+INFO 	 2018-03-30 12:41:34,608 	 stat_list 	 files/stat.gov.kz/legal_entity/30.03.18/zip/19 was downloaded
+INFO 	 2018-03-30 12:41:35,752 	 stat_list 	 files/stat.gov.kz/legal_entity/30.03.18/zip/23 was downloaded
+INFO 	 2018-03-30 12:41:37,549 	 stat_list 	 files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+INFO 	 2018-03-30 12:41:37,596 	 stat_list 	 files/stat.gov.kz/legal_entity/30.03.18/zip/files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+WARNING 	 2018-03-30 12:41:37,596 	 stat_list 	 files/stat.gov.kz/legal_entity/30.03.18/zip/files/stat.gov.kz/legal_entity/30.03.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-03-30 12:48:52,074 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/11 was downloaded
+INFO 	 2018-03-30 12:48:53,078 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/15 was downloaded
+INFO 	 2018-03-30 12:48:54,889 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/19 was downloaded
+INFO 	 2018-03-30 12:48:55,927 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/23 was downloaded
+INFO 	 2018-03-30 12:50:07,489 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/11 was downloaded
+INFO 	 2018-03-30 12:50:09,203 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/15 was downloaded
+INFO 	 2018-03-30 12:50:11,189 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/19 was downloaded
+INFO 	 2018-03-30 12:50:12,968 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/23 was downloaded
+INFO 	 2018-03-30 12:50:14,391 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+INFO 	 2018-03-30 12:50:14,438 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+WARNING 	 2018-03-30 12:50:14,438 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-03-30 12:50:15,223 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/31 was downloaded
+INFO 	 2018-03-30 12:50:19,162 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/35 was downloaded
+INFO 	 2018-03-30 12:50:26,328 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/39 was downloaded
+INFO 	 2018-03-30 12:50:28,100 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/43 was downloaded
+INFO 	 2018-03-30 12:50:33,363 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/47 was downloaded
+INFO 	 2018-03-30 12:50:37,613 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/51 was downloaded
+INFO 	 2018-03-30 12:50:40,878 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/55 was downloaded
+INFO 	 2018-03-30 12:50:40,964 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-03-30 12:50:40,964 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-03-30 12:50:42,097 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/59 was downloaded
+INFO 	 2018-03-30 12:50:44,954 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/63 was downloaded
+INFO 	 2018-03-30 12:50:52,000 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/71 was downloaded
+INFO 	 2018-03-30 12:50:58,531 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/75 was downloaded
+INFO 	 2018-03-30 12:51:42,710 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/csv/legal_entity.csv was copied to /tmp/ folder
+INFO 	 2018-03-30 12:51:42,869 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/csv/legal_branche.csv was copied to /tmp/ folder
+INFO 	 2018-03-30 13:13:37,576 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/11 was downloaded
+INFO 	 2018-03-30 13:13:39,185 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/15 was downloaded
+INFO 	 2018-03-30 13:13:40,849 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/19 was downloaded
+INFO 	 2018-03-30 13:13:42,197 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/23 was downloaded
+INFO 	 2018-03-30 13:13:43,132 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+INFO 	 2018-03-30 13:13:43,180 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+WARNING 	 2018-03-30 13:13:43,180 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-03-30 13:13:45,055 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/31 was downloaded
+INFO 	 2018-03-30 13:13:47,952 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/35 was downloaded
+INFO 	 2018-03-30 13:13:50,179 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/39 was downloaded
+INFO 	 2018-03-30 13:13:51,032 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/43 was downloaded
+INFO 	 2018-03-30 13:13:52,672 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/47 was downloaded
+INFO 	 2018-03-30 13:13:56,992 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/51 was downloaded
+INFO 	 2018-03-30 13:13:58,034 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/55 was downloaded
+INFO 	 2018-03-30 13:13:58,096 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-03-30 13:13:58,096 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-03-30 13:13:59,821 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/59 was downloaded
+INFO 	 2018-03-30 13:14:02,532 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/63 was downloaded
+INFO 	 2018-03-30 13:14:07,620 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/71 was downloaded
+INFO 	 2018-03-30 13:14:18,540 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/75 was downloaded
+INFO 	 2018-03-30 13:15:02,659 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/csv/legal_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-03-30 13:15:02,814 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/csv/legal_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-03-30 13:58:04,087 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/11 was downloaded
+INFO 	 2018-03-30 13:58:07,013 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/15 was downloaded
+INFO 	 2018-03-30 13:58:11,749 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/19 was downloaded
+INFO 	 2018-03-30 13:58:12,988 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/23 was downloaded
+INFO 	 2018-03-30 13:58:14,198 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+INFO 	 2018-03-30 13:58:14,250 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+WARNING 	 2018-03-30 13:58:14,250 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-03-30 13:58:15,783 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/31 was downloaded
+INFO 	 2018-03-30 14:01:13,081 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/11 was downloaded
+INFO 	 2018-03-30 14:01:23,025 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/15 was downloaded
+INFO 	 2018-03-30 14:01:24,440 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/19 was downloaded
+INFO 	 2018-03-30 14:01:25,778 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/23 was downloaded
+INFO 	 2018-03-30 14:01:26,791 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+INFO 	 2018-03-30 14:01:26,888 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+WARNING 	 2018-03-30 14:01:26,888 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-03-30 14:01:28,965 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/31 was downloaded
+INFO 	 2018-03-30 14:01:31,667 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/35 was downloaded
+INFO 	 2018-03-30 14:02:18,028 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/39 was downloaded
+INFO 	 2018-03-30 14:02:19,735 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/43 was downloaded
+INFO 	 2018-03-30 14:02:21,442 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/47 was downloaded
+INFO 	 2018-03-30 14:02:26,414 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/51 was downloaded
+INFO 	 2018-03-30 14:03:28,080 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/55 was downloaded
+INFO 	 2018-03-30 14:03:28,374 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-03-30 14:03:28,374 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-03-30 14:03:29,542 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/59 was downloaded
+INFO 	 2018-03-30 14:03:35,865 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/63 was downloaded
+INFO 	 2018-03-30 14:03:43,786 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/71 was downloaded
+INFO 	 2018-03-30 14:05:03,398 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/75 was downloaded
+INFO 	 2018-03-30 14:05:48,177 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/csv/legal_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-03-30 14:05:48,334 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/csv/legal_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-03-30 20:03:42,873 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/11 was downloaded
+INFO 	 2018-03-30 20:03:45,595 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/15 was downloaded
+INFO 	 2018-03-30 20:03:49,112 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/19 was downloaded
+INFO 	 2018-03-30 20:03:51,219 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/23 was downloaded
+INFO 	 2018-03-30 20:03:52,018 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+INFO 	 2018-03-30 20:03:52,064 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 was downloaded
+WARNING 	 2018-03-30 20:03:52,064 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-03-30 20:03:52,915 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/31 was downloaded
+INFO 	 2018-03-30 20:03:54,767 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/35 was downloaded
+INFO 	 2018-03-30 20:03:57,083 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/39 was downloaded
+INFO 	 2018-03-30 20:03:58,178 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/43 was downloaded
+INFO 	 2018-03-30 20:04:00,490 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/47 was downloaded
+INFO 	 2018-03-30 20:04:06,065 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/51 was downloaded
+INFO 	 2018-03-30 20:04:06,964 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/55 was downloaded
+INFO 	 2018-03-30 20:04:07,035 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-03-30 20:04:07,035 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-03-30 20:04:08,735 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/59 was downloaded
+INFO 	 2018-03-30 20:04:12,438 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/63 was downloaded
+INFO 	 2018-03-30 20:04:17,227 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/71 was downloaded
+INFO 	 2018-03-30 20:04:25,169 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/zip/75 was downloaded
+INFO 	 2018-03-30 20:05:09,648 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/csv/legal_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-03-30 20:05:09,803 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/30.03.18/csv/legal_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-01 17:08:44,066 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/11 was downloaded
+INFO 	 2018-04-01 17:08:46,778 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/15 was downloaded
+INFO 	 2018-04-01 17:08:50,300 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/19 was downloaded
+INFO 	 2018-04-01 17:08:51,097 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/23 was downloaded
+INFO 	 2018-04-01 17:08:52,836 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/27 was downloaded
+INFO 	 2018-04-01 17:08:52,885 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/27 was downloaded
+WARNING 	 2018-04-01 17:08:52,886 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-04-01 17:08:54,850 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/31 was downloaded
+INFO 	 2018-04-01 17:08:56,825 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/35 was downloaded
+INFO 	 2018-04-01 17:08:58,040 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/39 was downloaded
+INFO 	 2018-04-01 17:08:59,772 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/43 was downloaded
+INFO 	 2018-04-01 17:09:01,009 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/47 was downloaded
+INFO 	 2018-04-01 17:09:06,609 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/51 was downloaded
+INFO 	 2018-04-01 17:09:07,985 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/55 was downloaded
+INFO 	 2018-04-01 17:09:08,051 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-04-01 17:09:08,051 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-04-01 17:09:09,771 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/59 was downloaded
+INFO 	 2018-04-01 17:09:11,464 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/63 was downloaded
+INFO 	 2018-04-01 17:09:15,262 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/71 was downloaded
+INFO 	 2018-04-01 17:09:24,600 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/zip/75 was downloaded
+INFO 	 2018-04-01 17:10:10,277 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/csv/legal_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-01 17:10:10,431 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/01.04.18/csv/legal_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-03 09:47:30,383 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/11 was downloaded
+INFO 	 2018-04-03 09:47:33,160 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/15 was downloaded
+INFO 	 2018-04-03 09:47:34,543 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/19 was downloaded
+INFO 	 2018-04-03 09:47:36,657 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/23 was downloaded
+INFO 	 2018-04-03 09:47:37,790 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+INFO 	 2018-04-03 09:47:37,837 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+WARNING 	 2018-04-03 09:47:37,837 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-04-03 09:47:41,446 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/31 was downloaded
+INFO 	 2018-04-03 09:47:45,869 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/35 was downloaded
+INFO 	 2018-04-03 09:47:49,933 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/39 was downloaded
+INFO 	 2018-04-03 09:47:52,882 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/43 was downloaded
+INFO 	 2018-04-03 09:47:55,137 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/47 was downloaded
+INFO 	 2018-04-03 09:48:01,617 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/51 was downloaded
+INFO 	 2018-04-03 09:48:09,006 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/55 was downloaded
+INFO 	 2018-04-03 09:48:09,071 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-04-03 09:48:09,071 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-04-03 09:48:17,591 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/59 was downloaded
+INFO 	 2018-04-03 09:48:23,427 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/63 was downloaded
+INFO 	 2018-04-03 09:48:37,818 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/71 was downloaded
+INFO 	 2018-04-03 09:48:46,525 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/75 was downloaded
+INFO 	 2018-04-03 09:49:37,254 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/csv/legal_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-03 09:49:37,424 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/csv/legal_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-03 11:20:16,368 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/11 was downloaded
+INFO 	 2018-04-03 11:20:17,929 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/15 was downloaded
+INFO 	 2018-04-03 11:20:21,885 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/19 was downloaded
+INFO 	 2018-04-03 11:20:23,999 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/23 was downloaded
+INFO 	 2018-04-03 11:20:25,927 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+INFO 	 2018-04-03 11:20:25,979 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+WARNING 	 2018-04-03 11:20:25,979 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-04-03 11:20:31,582 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/31 was downloaded
+INFO 	 2018-04-03 11:20:45,271 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/35 was downloaded
+INFO 	 2018-04-03 11:20:47,148 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/39 was downloaded
+INFO 	 2018-04-03 11:20:55,808 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/43 was downloaded
+INFO 	 2018-04-03 11:21:00,895 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/47 was downloaded
+INFO 	 2018-04-03 11:21:03,559 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/51 was downloaded
+INFO 	 2018-04-03 11:21:09,155 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/55 was downloaded
+INFO 	 2018-04-03 11:21:09,227 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-04-03 11:21:09,227 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-04-03 11:21:16,744 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/59 was downloaded
+INFO 	 2018-04-03 11:21:25,529 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/63 was downloaded
+INFO 	 2018-04-03 11:21:49,394 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/71 was downloaded
+INFO 	 2018-04-03 11:22:23,155 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/75 was downloaded
+INFO 	 2018-04-03 11:23:11,413 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/csv/legal_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-03 11:23:11,567 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/csv/legal_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-03 11:27:48,140 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/11 was downloaded
+INFO 	 2018-04-03 11:27:51,562 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/15 was downloaded
+INFO 	 2018-04-03 11:27:56,865 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/19 was downloaded
+INFO 	 2018-04-03 11:27:57,805 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/23 was downloaded
+INFO 	 2018-04-03 11:28:01,080 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+INFO 	 2018-04-03 11:28:01,126 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+WARNING 	 2018-04-03 11:28:01,126 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-04-03 11:28:02,171 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/31 was downloaded
+INFO 	 2018-04-03 11:28:04,622 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/35 was downloaded
+INFO 	 2018-04-03 11:28:06,350 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/39 was downloaded
+INFO 	 2018-04-03 11:28:09,390 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/43 was downloaded
+INFO 	 2018-04-03 11:28:19,795 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/47 was downloaded
+INFO 	 2018-04-03 11:28:23,704 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/51 was downloaded
+INFO 	 2018-04-03 11:28:25,367 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/55 was downloaded
+INFO 	 2018-04-03 11:28:25,432 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-04-03 11:28:25,432 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-04-03 11:28:28,664 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/59 was downloaded
+INFO 	 2018-04-03 11:28:32,572 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/63 was downloaded
+INFO 	 2018-04-03 11:28:46,255 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/71 was downloaded
+INFO 	 2018-04-03 11:28:59,666 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/75 was downloaded
+INFO 	 2018-04-03 11:29:47,135 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/csv/legal_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-03 11:29:47,289 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/csv/legal_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-03 13:02:47,578 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/11 was downloaded
+INFO 	 2018-04-03 13:02:48,916 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/15 was downloaded
+INFO 	 2018-04-03 13:02:52,441 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/19 was downloaded
+INFO 	 2018-04-03 13:02:54,568 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/23 was downloaded
+INFO 	 2018-04-03 13:02:56,395 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+INFO 	 2018-04-03 13:02:56,443 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+WARNING 	 2018-04-03 13:02:56,443 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-04-03 13:02:58,516 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/31 was downloaded
+INFO 	 2018-04-03 13:03:01,332 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/35 was downloaded
+INFO 	 2018-04-03 13:03:03,797 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/39 was downloaded
+INFO 	 2018-04-03 13:03:04,804 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/43 was downloaded
+INFO 	 2018-04-03 13:03:05,891 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/47 was downloaded
+INFO 	 2018-04-03 13:03:09,240 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/51 was downloaded
+INFO 	 2018-04-03 13:03:10,152 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/55 was downloaded
+INFO 	 2018-04-03 13:03:10,218 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-04-03 13:03:10,218 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-04-03 13:03:12,434 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/59 was downloaded
+INFO 	 2018-04-03 13:03:16,055 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/63 was downloaded
+INFO 	 2018-04-03 13:03:21,605 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/71 was downloaded
+INFO 	 2018-04-03 13:03:32,573 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/75 was downloaded
+INFO 	 2018-04-03 13:04:20,334 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/csv/legal_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-03 13:04:20,487 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/csv/legal_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-03 17:46:42,838 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/11 was downloaded
+INFO 	 2018-04-03 17:46:45,589 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/15 was downloaded
+INFO 	 2018-04-03 17:46:47,064 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/19 was downloaded
+INFO 	 2018-04-03 17:46:49,188 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/23 was downloaded
+INFO 	 2018-04-03 17:46:49,876 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+INFO 	 2018-04-03 17:46:49,924 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+WARNING 	 2018-04-03 17:46:49,925 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-04-03 17:46:52,005 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/31 was downloaded
+INFO 	 2018-04-03 17:46:53,739 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/35 was downloaded
+INFO 	 2018-04-03 17:46:54,624 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/39 was downloaded
+INFO 	 2018-04-03 17:46:55,956 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/43 was downloaded
+INFO 	 2018-04-03 17:46:57,028 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/47 was downloaded
+INFO 	 2018-04-03 17:46:59,582 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/51 was downloaded
+INFO 	 2018-04-03 17:47:02,066 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/55 was downloaded
+INFO 	 2018-04-03 17:47:02,138 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-04-03 17:47:02,138 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-04-03 17:47:22,092 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/11 was downloaded
+INFO 	 2018-04-03 17:47:23,187 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/15 was downloaded
+INFO 	 2018-04-03 17:47:26,703 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/19 was downloaded
+INFO 	 2018-04-03 17:47:27,714 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/23 was downloaded
+INFO 	 2018-04-03 17:47:29,434 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+INFO 	 2018-04-03 17:47:29,479 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 was downloaded
+WARNING 	 2018-04-03 17:47:29,480 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/27 file from http://stat.gov.kz/getImg?id=ESTAT086122 unexpected extension
+INFO 	 2018-04-03 17:47:30,690 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/31 was downloaded
+INFO 	 2018-04-03 17:47:32,831 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/35 was downloaded
+INFO 	 2018-04-03 17:47:34,377 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/39 was downloaded
+INFO 	 2018-04-03 17:47:35,127 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/43 was downloaded
+INFO 	 2018-04-03 17:47:35,988 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/47 was downloaded
+INFO 	 2018-04-03 17:47:41,567 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/51 was downloaded
+INFO 	 2018-04-03 17:47:42,906 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/55 was downloaded
+INFO 	 2018-04-03 17:47:42,968 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130 was downloaded
+WARNING 	 2018-04-03 17:47:42,968 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/ESTAT086130.xml file from http://stat.gov.kz/getImg?id=ESTAT086130 unexpected extension
+INFO 	 2018-04-03 17:47:43,726 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/59 was downloaded
+INFO 	 2018-04-03 17:47:46,813 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/63 was downloaded
+INFO 	 2018-04-03 17:47:50,191 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/71 was downloaded
+INFO 	 2018-04-03 17:47:56,655 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/zip/75 was downloaded
+INFO 	 2018-04-03 17:48:44,958 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/csv/legal_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-03 17:48:45,114 	 stat_list 	 interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/03.04.18/csv/legal_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-04 15:53:52,793 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-04 15:54:17,639 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-04 15:54:17,640 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-04 16:21:23,221 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-04 16:21:23,398 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-04 16:24:42,123 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-04 16:24:42,300 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-04 16:34:43,795 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-04 16:34:43,971 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-05 10:01:50,907 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-05 10:01:51,078 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-08 22:15:00,060 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-08 22:15:00,288 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-08 22:18:42,444 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-08 22:18:42,671 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-08 22:27:06,046 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-08 22:27:06,279 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_branche.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-09 08:37:01,258 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_entity.csv was copied to interprises_parsers/tmp/ folder
+INFO 	 2018-04-09 08:37:01,503 	 stat_list 	 interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/19.06.17/csv/old_branche.csv was copied to interprises_parsers/tmp/ folder
