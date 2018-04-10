@@ -24,7 +24,7 @@
                     <div class="director">
                         <hr>
                         <h3 class="director__title"> {{ results.company.CEO }}</h3>
-                        <p class="director__old">Старый директор:
+                        <p class="director__old" v-if="results.old[0] != undefined">Старый директор:
                             <span v-if="results.old[0].CEO != results.company.CEO">
                                     <b>{{ results.old[0].CEO }}</b>
                                 </span>
@@ -34,9 +34,19 @@
                         </p>
                         <p class="director__terror">
                             В базе террористов :
-                            <!--<span v-if="results.bad == 0" class="green">Нет</span>-->
-                            <!--<span v-else class="red">Есть</span>-->
+                            <span v-if="results.ceo.terror == 0" class="green">Нет</span>
+                            <span v-else class="red">Есть</span>
                         </p>
+
+                        <div v-if="results.ceo.interprises.length > 1" class="director__interprises">
+                            <h3>{{ results.company.CEO }} Также является владельцем следующих {{results.ceo.interprises.length}} предприятий ...</h3>
+                            <p v-for="(item, index) in results.ceo.interprises">
+                                <router-link :to="{ name: 'company', params: { companyId: item.id }}">
+                                    {{ item.name_ru }}
+                                </router-link>
+                            </p>
+                        </div>
+
                         <hr>
                     </div>
                 </div>

@@ -31,6 +31,7 @@ class CompanyController extends Controller
         $data['branch'] = Branch::where('head_BIN', 'like', '%' . substr($query_interprise->BIN, 1, 11) . '%')->count();
 
         $data['ceo']['terror'] = TerrorInterprise::where('name', 'like', '%' . $query_interprise->CEO . '%')->count();
+        $data['ceo']['interprises'] = Interprise::where('CEO', 'like', '%' . $query_interprise->CEO . '%')->get();
 
         return $data;
     }
