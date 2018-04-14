@@ -2,16 +2,14 @@
     "private": true,
     "scripts": {
         "dev": "npm run development",
-        "development": "rm -rf ./public/images ./public/css ./public/fonts ./public/js && cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
-        "development-win": "rm2 -rf ./public/images ./public/css ./public/fonts ./public/js && cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
-        "watch": "rm -rf ./public/images ./public/css ./public/fonts ./public/js && cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=webpack.config.js",
-        "watch-win": "rm2 -rf ./public/images ./public/css ./public/fonts ./public/js && cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=webpack.config.js",
+        "development": "rm -rf ./public/js ./public/images ./public/fonts && cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=./webpack.config.js",
+        "development-win": "rm2 -rf ./public/js ./public/images ./public/fonts && cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=./webpack.config.js",
+        "watch": "rm -rf ./public/js ./public/images ./public/fonts && cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=./webpack.config.js",
+        "watch-win": "rm2 -rf ./public/js ./public/images ./public/fonts && cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=./webpack.config.js",
         "watch-poll": "npm run watch -- --watch-poll",
-        "hot": "rm -rf ./public/images ./public/css ./public/fonts ./public/js && cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=webpack.config.js",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=./webpack.config.js",
         "prod": "npm run production",
-        "prod-win": "npm run production-win",
-        "production": "rm -rf ./public/images ./public/css ./public/fonts ./public/js && cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
-        "production-win": "rm2 -rf ./public/images ./public/css ./public/fonts ./public/js && cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js"
+        "production": "rm -rf ./public/js ./public/images ./public/fonts && cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=./webpack.config.js"
     },
     "devDependencies": {
         "babel-plugin-transform-object-rest-spread": "^6.23.0",

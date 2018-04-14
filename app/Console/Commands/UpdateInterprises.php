@@ -50,43 +50,48 @@ class UpdateInterprises extends Command
 
 
 
-        if (is_dir('interprises_parsers/parsers/legal_entity/files')) {
-            shell_exec('rm2 -rf interprises_parsers/parsers/legal_entity/files');
-        }
-        if (is_dir('interprises_parsers/tmp')) {
-            shell_exec('rm2 -rf interprises_parsers/tmp');
-        }
+        //if (is_dir('interprises_parsers/parsers/legal_entity/files')) {
+        //    shell_exec('rm2 -rf interprises_parsers/parsers/legal_entity/files');
+        //}
+        //if (is_dir('interprises_parsers/tmp')) {
+        //    shell_exec('rm2 -rf interprises_parsers/tmp');
+        //}
 
 
-        Schema::dropIfExists('legal_branche');
-        Schema::dropIfExists('legal_entity');
-        Schema::dropIfExists('lie_entity');
-        Schema::dropIfExists('exbankrot_entity');
-        Schema::dropIfExists('bankrot_entity');
-        Schema::dropIfExists('old_entity');
-        Schema::dropIfExists('old_branche');
-        Schema::dropIfExists('terror_entity');
-        Schema::dropIfExists('bad_entity');
-        Schema::dropIfExists('good_entity');
+        //Schema::dropIfExists('legal_branche');
+        //Schema::dropIfExists('legal_entity');
+        //Schema::dropIfExists('lie_entity');
+        //Schema::dropIfExists('exbankrot_entity');
+        //Schema::dropIfExists('bankrot_entity');
+        //Schema::dropIfExists('old_entity');
+        //Schema::dropIfExists('old_branche');
+        //Schema::dropIfExists('terror_entity');
+        //Schema::dropIfExists('bad_entity');
+        //Schema::dropIfExists('good_entity');
 
 
         if(PHP_OS == 'WINNT'){
-            $output = shell_exec('python interprises_parsers/parsers/legal_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
+            //$output = shell_exec('python interprises_parsers/parsers/legal_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
+            //echo $output;
+            //$output = shell_exec('python interprises_parsers/parsers/lie_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
+            //echo $output;
+            //$output = shell_exec('python interprises_parsers/parsers/exbankrot_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
+            //echo $output;
+            //$output = shell_exec('python interprises_parsers/parsers/bankrot_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
+            //echo $output;
+
+
+            //$output = shell_exec('python interprises_parsers/parsers/old_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
+            $output = shell_exec('python interprises_parsers/parsers/old_entity/init-changes.py '.$host.' '.$user.' '.$pass.' '.$db);
             echo $output;
-            $output = shell_exec('python interprises_parsers/parsers/lie_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
-            echo $output;
-            $output = shell_exec('python interprises_parsers/parsers/exbankrot_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
-            echo $output;
-            $output = shell_exec('python interprises_parsers/parsers/bankrot_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
-            echo $output;
-            $output = shell_exec('python interprises_parsers/parsers/old_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
-            echo $output;
-            $output = shell_exec('python interprises_parsers/parsers/terror_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
-            echo $output;
-            $output = shell_exec('python interprises_parsers/parsers/bad_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
-            echo $output;
-            $output = shell_exec('python interprises_parsers/parsers/good_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
-            echo $output;
+
+
+            //$output = shell_exec('python interprises_parsers/parsers/terror_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
+            //echo $output;
+            //$output = shell_exec('python interprises_parsers/parsers/bad_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
+            //echo $output;
+            //$output = shell_exec('python interprises_parsers/parsers/good_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
+            //echo $output;
         } else {
             $output = shell_exec('python3 interprises_parsers/parsers/legal_entity/stat_list.py '.$host.' '.$user.' '.$pass.' '.$db);
             echo $output;

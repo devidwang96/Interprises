@@ -1,6 +1,7 @@
 let mix = require('laravel-mix');
 const fs_extra = require('fs-extra');
 
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -14,7 +15,11 @@ const fs_extra = require('fs-extra');
 
 mix
     .js('resources/assets/js/app.js', 'public/js/app.js')
+    .copyDirectory('resources/assets/images/', 'public/images/')
+    .copyDirectory('resources/assets/fonts/', 'public/fonts/')
+    .sass('resources/assets/sass/app.scss', 'public/css/app.css')
     .browserSync('interprises.test');
+
 
 if(process.env.NODE_ENV == 'production')
     mix.version();

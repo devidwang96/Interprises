@@ -13,3 +13,17 @@ Vue.component(
     'app',
     require('./components/App.vue')
 );
+
+
+
+
+Vue.component(
+    'siteHeader',
+    require('./components/Pages/Parts/Header.vue')
+);
+
+
+Vue.component(
+    'siteFooter',
+    require('./components/Pages/Parts/Footer.vue')
+);

@@ -1,0 +1,29 @@
+.page-welcome{
+  .section{
+    &-search{
+      min-height: 600px;
+      vertical-align: top;
+      padding:100px;
+      background: url(/images/Business-Wallpapers-HD-Free-Download.jpg);
+      background-size: 100% auto;
+      background-position-y: -130px;
+      color:#fff;
+      .search{
+        width:500px;
+      }
+    }
+    &-reg{
+      min-height: 600px;
+      vertical-align: top;
+      padding: 100px;
+      background: url(/images/Introducing_Sopheon_Solution_-for_EIM_image.jpg);
+      background-size: 100% auto;
+      color: $primary-color;
+      .reg{
+        width:500px;
+      }
+    }
+  }
+}
+
+

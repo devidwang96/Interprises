@@ -1,5 +1,7 @@
 <?php
 
+//phpinfo();
+//die();
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
@@ -7,7 +9,7 @@
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 
-//phpinfo();
+
 define('LARAVEL_START', microtime(true));
 
 /*

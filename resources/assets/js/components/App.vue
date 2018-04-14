@@ -1,9 +1,15 @@
 <template>
     <div>
-        <keep-alive>
-            <router-view>
+        <site-header></site-header>
 
-            </router-view>
+        <keep-alive>
+
+                <router-view>
+
+                </router-view>
+
         </keep-alive>
+
+        <site-footer></site-footer>
     </div>
 </template>

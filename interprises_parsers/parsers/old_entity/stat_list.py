@@ -24,10 +24,14 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 logging.basicConfig(format='%(levelname)s \t %(asctime)s \t %(module)s \t %(message)s', level=logging.INFO,
                     filename=dir_path + "/logs/load_list.log")
 
+
 host = argv[1]
 username = argv[2]
 password = argv[3]
 database = argv[4]
+
+
+
 
 if password == 'nopass':
     password = ''
@@ -72,6 +76,9 @@ def from_excel_to_txt(filename):
             if row == 3:
                 ok = True
     f.close()
+
+
+
 
 
 def download_files():
@@ -129,18 +136,13 @@ def download_files():
             'economic_activity_codes',
             'company_size_code',
 
-
             'size_kk',
             'size_ru',
 
-
             'territory_code',
-
 
             'locality_kk',
             'locality_ru',
-
-
 
             'address',
             'CEO',
@@ -318,5 +320,5 @@ def find_branches(company_ids):
     return branches
 
 
-download_files()
-import_to_db()
+# download_files()
+# import_to_db()

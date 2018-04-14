@@ -1,54 +1,56 @@
 <template>
     <div>
-        <div class="search">
-            <form @submit.prevent="localSearch">
-                <input type="text"
-                       v-model="localQuery"
-                       placeholder="Искать предприятие...">
-                <input type="submit" value="Искать">
-            </form>
-        </div>
-        <h1>Результаты поиска</h1>
-        <div class="results">
-            <div v-if="status == 'searching'" class="searching">
-                Обработка запроса...
+        <div class="container">
+            <div class="search">
+                <form @submit.prevent="localSearch">
+                    <input type="text"
+                           v-model="localQuery"
+                           placeholder="Искать предприятие...">
+                    <input type="submit" value="Искать">
+                </form>
             </div>
-            <div v-if="status == 'not-found'" class="not-found">
-                По вашему запросу ничего не найдено
-            </div>
-            <div v-if="status == 'loaded'" v-for="(item, index) in results" class="result">
-                <h2 class="result__name">
-                    <router-link :to="{ name: 'company', params: { companyId: item.id }}">
-                        {{ item.name_ru }}
-                    </router-link>
-                </h2>
-                <p class="result__activity">
-                    <b>{{ item.activity_ru }}</b>
-                </p>
-                <p class="result__address">
-                    Юридический адрес: {{ item.address }}
-                </p>
-                <p class="result__ceo">
-                    Руководитель: {{ item.CEO }}
-                </p>
-                <p class="result__date">
-                    Дата основания: {{ item.register_date }}
-                </p>
-                <p class="result__bin">
-                    БИН: {{ item.BIN }}
-                </p>
-                <p class="result__oked">
-                    ОКЭД: {{ item.economic_activity_code }}
-                </p>
-                <p class="result__kato">
-                    КАТО: {{ item.territory_code }}
-                </p>
-                <p class="result__status">
-                    Статус:
-                    <span v-if="item.active == 1" class="active">В работе</span>
-                    <span v-else>Не работает</span>
-                </p>
-                <br><br><br>
+            <h1>Результаты поиска</h1>
+            <div class="results">
+                <div v-if="status == 'searching'" class="searching">
+                    Обработка запроса...
+                </div>
+                <div v-if="status == 'not-found'" class="not-found">
+                    По вашему запросу ничего не найдено
+                </div>
+                <div v-if="status == 'loaded'" v-for="(item, index) in results" class="result">
+                    <h2 class="result__name">
+                        <router-link :to="{ name: 'company', params: { companyId: item.id }}">
+                            {{ item.name_ru }}
+                        </router-link>
+                    </h2>
+                    <p class="result__activity">
+                        <b>{{ item.activity_ru }}</b>
+                    </p>
+                    <p class="result__address">
+                        Юридический адрес: {{ item.address }}
+                    </p>
+                    <p class="result__ceo">
+                        Руководитель: {{ item.CEO }}
+                    </p>
+                    <p class="result__date">
+                        Дата основания: {{ item.register_date }}
+                    </p>
+                    <p class="result__bin">
+                        БИН: {{ item.BIN }}
+                    </p>
+                    <p class="result__oked">
+                        ОКЭД: {{ item.economic_activity_code }}
+                    </p>
+                    <p class="result__kato">
+                        КАТО: {{ item.territory_code }}
+                    </p>
+                    <p class="result__status">
+                        Статус:
+                        <span v-if="item.active == 1" class="active">В работе</span>
+                        <span v-else>Не работает</span>
+                    </p>
+                    <br><br><br>
+                </div>
             </div>
         </div>
     </div>
