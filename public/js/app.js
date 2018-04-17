@@ -16731,7 +16731,7 @@ var routes = [{
         }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
     }
 }, {
-    path: '/company/:companyId',
+    path: '/company/:companyBin',
     name: 'company',
     component: function component(resolve) {
         __webpack_require__.e/* require.ensure */(1).then((function () {

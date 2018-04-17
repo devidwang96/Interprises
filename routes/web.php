@@ -17,5 +17,6 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'backend'], function ($router) {
     $router->get('search/{query}', 'SearchController@index');
-    $router->get('company/{id}', 'CompanyController@index');
+    $router->get('company/{bin}', 'CompanyController@index');
+    $router->get('history/{bin}', 'HistoryController@index');
 });

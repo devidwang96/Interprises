@@ -6,7 +6,7 @@
                     <input type="text"
                            v-model="localQuery"
                            placeholder="Искать предприятие...">
-                    <input type="submit" value="Искать">
+                    <input type="submit" class="button button-primary" value="Искать">
                 </form>
             </div>
             <h1>Результаты поиска</h1>
@@ -19,7 +19,7 @@
                 </div>
                 <div v-if="status == 'loaded'" v-for="(item, index) in results" class="result">
                     <h2 class="result__name">
-                        <router-link :to="{ name: 'company', params: { companyId: item.id }}">
+                        <router-link :to="{ name: 'company', params: { companyBin: item.BIN }}">
                             {{ item.name_ru }}
                         </router-link>
                     </h2>
@@ -78,6 +78,7 @@
             },
             search() {
                 if((this.$route.query.query != undefined) && (this.$route.query.query.length > 0)){
+                    this.status="searching";
                     this.query = this.$route.query.query;
                     this.localQuery = this.$route.query.query;
                     this.findRequest();

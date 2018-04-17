@@ -21,7 +21,7 @@ const routes = [
         }
     },
     {
-        path: '/company/:companyId',
+        path: '/company/:companyBin',
         name: 'company',
         component: resolve => {
             require.ensure(['./components/Pages/Company.vue'], () => {

@@ -79,6 +79,44 @@ form{
   }
 }
 
+.marker{
+  position:relative;
+  padding-left:30px;
+  &:after{
+    content: " ";
+    display: block;
+    position: Absolute;
+    left: 6px;
+    height: 15px;
+    top: 2px;
+    width: 15px;
+    border-radius: 100%;
+    //background-color: #000;
+    //box-shadow: 0 0 10px #000;
+  }
+  &.green{
+    color:green;
+    &:after{
+      background-color: green;
+      box-shadow: 0 0 10px green;
+    }
+  }
+  &.orange{
+    color:orange;
+    &:after{
+      background-color: orange;
+      box-shadow: 0 0 10px orange;
+    }
+  }
+  &.red{
+    color:red;
+    &:after{
+      background-color: red;
+      box-shadow: 0 0 10px red;
+    }
+  }
+}
+
 .anim-route{
   &-enter{
     transition: all 1s;

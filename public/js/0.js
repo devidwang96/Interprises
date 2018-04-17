@@ -1723,6 +1723,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         },
         search: function search() {
             if (this.$route.query.query != undefined && this.$route.query.query.length > 0) {
+                this.status = "searching";
                 this.query = this.$route.query.query;
                 this.localQuery = this.$route.query.query;
                 this.findRequest();
@@ -1794,6 +1795,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       }
     }
   }), _vm._v(" "), _c('input', {
+    staticClass: "button button-primary",
     attrs: {
       "type": "submit",
       "value": "Искать"
@@ -1814,7 +1816,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "to": {
           name: 'company',
           params: {
-            companyId: item.id
+            companyBin: item.BIN
           }
         }
       }

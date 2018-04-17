@@ -8565,6 +8565,49 @@ form input[type="text"] {
   margin: 0 auto;
 }
 
+.marker {
+  position: relative;
+  padding-left: 30px;
+}
+
+.marker:after {
+  content: " ";
+  display: block;
+  position: Absolute;
+  left: 6px;
+  height: 15px;
+  top: 2px;
+  width: 15px;
+  border-radius: 100%;
+}
+
+.marker.green {
+  color: green;
+}
+
+.marker.green:after {
+  background-color: green;
+  box-shadow: 0 0 10px green;
+}
+
+.marker.orange {
+  color: orange;
+}
+
+.marker.orange:after {
+  background-color: orange;
+  box-shadow: 0 0 10px orange;
+}
+
+.marker.red {
+  color: red;
+}
+
+.marker.red:after {
+  background-color: red;
+  box-shadow: 0 0 10px red;
+}
+
 .anim-route-enter {
   transition: all 1s;
 }
@@ -8627,4 +8670,57 @@ form input[type="text"] {
 
 .page-welcome .section-reg .reg {
   width: 500px;
+}
+
+.page-company .company__name {
+  text-align: center;
+  margin: 60px 0 30px;
+}
+
+.page-company .company__base-info {
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.page-company .company__base-info h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-company .company__history h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-company .company__history .history {
+  padding: 15px 0;
+  border-bottom: 1px dashed #000;
+}
+
+.page-company .company__history button {
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.page-company .company__history button i {
+  transform: rotate(-180deg);
+  transition: all .5s;
+  display: inline-block;
+}
+
+.page-company .company__history button i img {
+  width: 20px;
+  height: 20px;
+}
+
+.page-company .company__history button.collapsed i {
+  transform: rotate(0deg);
+}
+
+.page-company .company__markers {
+  margin-top: 20px;
+  padding: 20PX 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
 }
