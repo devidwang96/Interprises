@@ -28,14 +28,6 @@
                                 <div class="director">
                                     <hr>
                                     <h3 class="director__title"> {{ results.company.CEO }}</h3>
-                                    <!--<p class="director__old" v-if="results.old[0] != undefined">Старый директор:-->
-                                    <!--<span v-if="results.old[0].CEO != results.company.CEO">-->
-                                    <!--<b>{{ results.old[0].CEO }}</b>-->
-                                    <!--</span>-->
-                                    <!--<span v-else>-->
-                                    <!--Нет-->
-                                    <!--</span>-->
-                                    <!--</p>-->
                                     <p class="director__terror">
                                         В базе террористов :
                                         <span v-if="results.ceo.terror == 0" class="marker green">Нет</span>
@@ -43,7 +35,8 @@
                                     </p>
 
                                     <div v-if="results.ceo.interprises.length > 1" class="director__interprises">
-                                        <h3>{{ results.company.CEO }} Также является владельцем следующих {{results.ceo.interprises.length}} предприятий ...</h3>
+                                        <h3>{{ results.company.CEO }} Также является владельцем следующих
+                                            {{results.ceo.interprises.length}} предприятий ...</h3>
                                         <p v-for="(item, index) in results.ceo.interprises">
                                             <router-link :to="{ name: 'company', params: { companyBin: item.id }}">
                                                 {{ item.name_ru }}
@@ -61,18 +54,36 @@
                             <p class="company__bin">
                                 БИН: {{ results.company.BIN }}
                             </p>
-                            <p class="company__oked">
-                                ОКЭД: {{ results.company.economic_activity_code }}
-                            </p>
-                            <p class="company__kato">
-                                КАТО: {{ results.company.territory_code }}
-                            </p>
+
                             <p class="company__status">
                                 Статус:
                                 <span v-if="results.company.active == 1" class="marker green active">В работе</span>
                                 <span class="marker red" v-else>Не работает</span>
                             </p>
 
+                            <br>
+
+                            <div class="company__oked">
+                                <button class="collapsed main-collapse" data-toggle="collapse" data-target="#oked">
+                                    ОКЭД: {{ results.company.economic_activity_code }}<i><img
+                                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+"
+                                        alt=""></i>
+                                </button>
+                                <div id="oked" class="collapse">
+                                    {{oked}}
+                                </div>
+                            </div>
+                            <br>
+                            <p class="company__kato">
+                                <button class="collapsed main-collapse" data-toggle="collapse" data-target="#kato">
+                                    КАТО: {{ results.company.territory_code }}<i><img
+                                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+"
+                                        alt=""></i>
+                                </button>
+                            <div id="kato" class="collapse">
+                                {{kato}}
+                            </div>
+                            </p>
 
                             <div class="company__markers">
                                 <p class="company__bad">
@@ -113,8 +124,10 @@
                             </p>
                             <div v-if="historyStatus == 'success'">
                                 <div class="history" v-for="(item, index) in history">
-                                    <button class="collapsed" data-toggle="collapse" :data-target="'#history_' + index">{{ item.date }}
-                                    <i><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+" alt=""></i></button>
+                                    <button class="collapsed main-collapse" data-toggle="collapse"
+                                            :data-target="'#history_' + index">{{ item.date }}
+                                        <i><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+"
+                                                alt=""></i></button>
                                     <div :id="'history_' + index" class="collapse">
                                         <p v-if="item.field == 'CEO'">
                                             Был директор: <br>
@@ -129,14 +142,15 @@
                                             <b>{{ item.oldValue }}</b>
                                         </p>
                                         <p v-if="item.field == 'active'">
-                                            Компания <b v-if="item.oldValue == 1"> работала</b><b v-if="item.oldValue == 0">не работала</b>
+                                            Компания <b v-if="item.oldValue == 1"> работала</b><b
+                                                v-if="item.oldValue == 0">не работала</b>
                                         </p>
                                         <p v-if="item.field == 'territory_code'">
-                                        Был КАТО: <br>
+                                            Был КАТО: <br>
                                             <b>{{ item.oldValue }}</b>
                                         </p>
                                         <p v-if="item.field == 'economic_activity_code'">
-                                        Был ОКЭД: <br>
+                                            Был ОКЭД: <br>
                                             <b>{{ item.oldValue }}</b>
                                         </p>
                                     </div>
@@ -154,34 +168,29 @@
 
 <script>
     import axios from "axios";
+
     export default {
-        data(){
+        data() {
             return {
                 companyBin: '',
                 status: 'empty',
+                oked: '',
+                kato: '',
                 results: {
                     company: {},
                 },
-                history: {
-
-                },
+                history: {},
                 historyStatus: 'empty',
                 ceoInfoOpen: false,
             }
         },
         methods: {
-            getHistory(){
+            getHistory() {
                 this.historyStatus = 'loading';
                 axios.get('/backend/history/' + this.companyBin)
                     .then((response) => {
                         let historyResponse = response.data;
-                        let historyRows  = [
-                            // {
-                            //     field: 'CEO',
-                            //     oldValue: 'КРЫКБАЕВ АСКАР САНАТОВИЧ',
-                            //     date: '12.06.17'
-                            // }
-                        ];
+                        let historyRows = [];
                         let historyFields = [
                             'CEO',
                             'name_ru',
@@ -192,22 +201,17 @@
                         ];
 
 
-                        for(let i in historyResponse){
-                            for(let j in historyFields){
-                                if(historyResponse[i][historyFields[j]] != this.results.company[historyFields[j]]){
+                        for (let i in historyResponse) {
+                            for (let j in historyFields) {
+                                if (historyResponse[i][historyFields[j]] != this.results.company[historyFields[j]]) {
                                     let push = true;
-                                    console.log(historyFields[j]);
-                                    console.log(historyResponse[i][historyFields[j]]);
-                                    console.log(historyResponse[i].update_date);
-                                    // console.log(this.results.company[historyFields[j]]);
 
-                                    for(let k in historyRows){
-                                        if(historyRows[k].oldValue == historyResponse[i][historyFields[j]]){
-                                            console.log('Нет! Такой уже есть');
+                                    for (let k in historyRows) {
+                                        if (historyRows[k].oldValue == historyResponse[i][historyFields[j]]) {
                                             push = false;
                                         }
                                     }
-                                    if(push){
+                                    if (push) {
                                         historyRows.push(
                                             {
                                                 field: historyFields[j],
@@ -219,22 +223,54 @@
                                 }
                             }
                         }
-
-                        console.log('Сформированная история компании:');
-                        console.log(historyRows);
-                        console.log(historyRows.length)
-                        if(historyRows.length > 0){
+                        if (historyRows.length > 0) {
                             this.historyStatus = 'success';
                             this.history = historyRows;
                         } else {
                             this.historyStatus = 'empty';
                         }
+                        this.getKato();
+                        this.getOked();
                     })
-                    .catch((error)=> {
+                    .catch((error) => {
                         console.log(error);
                         this.historyStatus = 'error';
                     });
             },
+            getKato() {
+                axios.get('/backend/kato/' + this.results.company.territory_code)
+                    .then((response) => {
+                        if(response.data[0].name__ru == '' || response.data[0].name__ru == undefined){
+                            this.kato = 'Нет данных...';
+                        } else {
+                            this.kato = response.data[0].name__ru;
+                        }
+                        console.log(this.kato);
+
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                        this.status = 'error';
+                    });
+            },
+            getOked() {
+                axios.get('/backend/oked/' + this.results.company.economic_activity_code)
+                    .then((response) => {
+                        if(response.data[0].name_ru == '' || response.data[0].name_ru == undefined){
+                            this.oked= 'Нет данных...';
+                        } else {
+                            this.oked = response.data[0].name_ru;
+                        }
+
+
+                        console.log(this.oked);
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                        this.status = 'error';
+                    });
+            },
+
             getData() {
                 this.status = 'loading';
                 this.companyBin = this.$route.params.companyBin;
@@ -243,16 +279,15 @@
                     .then((response) => {
                         this.results = response.data;
                         this.results.length == 0 ? this.status = 'not-found' : this.status = 'done';
-                        console.log(this.results);
                         this.getHistory();
                     })
-                    .catch((error)=> {
+                    .catch((error) => {
                         console.log(error);
                         this.status = 'error';
                     });
 
             },
-            ceoInfo(){
+            ceoInfo() {
                 this.ceoInfoOpen = !this.ceoInfoOpen;
 
 
@@ -261,8 +296,8 @@
         created() {
             this.getData();
         },
-        watch : {
-            '$route.params.companyBin'(){
+        watch: {
+            '$route.params.companyBin'() {
                 this.getData();
             }
         },

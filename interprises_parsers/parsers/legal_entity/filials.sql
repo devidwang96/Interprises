@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS `filials` (`BIN` VARCHAR(1000) DEFAULT NULL,`name` VARCHAR(1000) DEFAULT NULL);
+CREATE TEMPORARY TABLE `filials_temp` (`BIN` varchar(1000) NOT NULL DEFAULT '',`name` varchar(1000)  DEFAULT NULL COMMENT 'Название предприятии' ) DEFAULT CHARSET=utf8;
+LOAD DATA LOCAL INFILE 'interprises_parsers/tmp/filials.csv' IGNORE INTO TABLE filials_temp FIELDS TERMINATED BY '\t' ENCLOSED BY '"' ESCAPED BY '\\' LINES TERMINATED BY '\n' IGNORE 1 LINES (`BIN`,`name`);
+INSERT INTO filials (`BIN`,`name`) SELECT`BIN`,`name` FROM filials_temp ON DUPLICATE KEY UPDATE`BIN` = VALUES(`BIN`),`name` = VALUES(`name`);

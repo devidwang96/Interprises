@@ -22,27 +22,89 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 logging.basicConfig(format='%(levelname)s \t %(asctime)s \t %(module)s \t %(message)s', level=logging.INFO,
                     filename=dir_path + "/logs/load_list.log")
 
-# host = argv[1]
-# username = argv[2]
-# password = argv[3]
-# database = argv[4]
-#
-# if password == 'nopass':
-#     password = ''
-#
-# import pymysql.cursors
-#
-# connection = pymysql.connect(host=host, user=username, password=password, db=database, charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor, local_infile=True)
+host = argv[1]
+username = argv[2]
+password = argv[3]
+database = argv[4]
+
+if password == 'nopass':
+    password = ''
+
+import pymysql.cursors
+
+connection = pymysql.connect(host=host, user=username, password=password, db=database, charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor, local_infile=True)
 
 old_dirs = []
 
+def firstDate(date):
+    print('Creating history ' + date + ' ...')
+    try:
+        with connection.cursor() as cursor:
+            sqlfile = "interprises_parsers/parsers/old_entity/FirstCreation.sql"
+            for line in open(sqlfile, encoding='UTF-8'):
+                if len(line) == 0:
+                    continue
+                query = line.replace('&&path&&', 'interprises_parsers/parsers/old_entity/files/' + date + '/legal_entity.csv', 1)
+                query = query.replace('&&date&&', date, 1)
+                cursor.execute(query)
+                result = cursor.fetchone()
+        connection.commit()
+        print("History date "+date+" were imported to db")
+    except Exception as e:
+        print("import to db error: %s" % str(e))
+    finally:
+        connection.close()
+
+def dates(date):
+    print('Creating history ' + date + ' ...')
+    connection = pymysql.connect(host=host, user=username, password=password, db=database, charset='utf8mb4', cursorclass=pymysql.cursors.DictCursor, local_infile=True)
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute("DROP TABLE IF EXISTS dates;")
+            result = cursor.fetchone()
+
+            cursor.execute("CREATE TABLE IF NOT EXISTS dates(id int NOT NULL PRIMARY KEY AUTO_INCREMENT, date VARCHAR(30) DEFAULT NULL);")
+            result = cursor.fetchone()
+
+            cursor.execute("INSERT INTO dates (date) VALUES ('"+ date +"');")
+            result = cursor.fetchone()
+
+            if(
+                    (time.strptime(date, "%d.%m.%y")) >
+                    (time.strptime("01.04.18", "%d.%m.%y"))
+            ):
+                sqlfile = "interprises_parsers/parsers/old_entity/new_second_last.sql"
+                for line in open(sqlfile, encoding='UTF-8'):
+                    if len(line) == 0:
+                        continue
+
+                    query = line.replace('&&path&&', 'interprises_parsers/parsers/old_entity/files/' + date + '/legal_entity.csv', 1)
+                    cursor.execute(query)
+                    result = cursor.fetchone()
+
+            else :
+                sqlfile = "interprises_parsers/parsers/old_entity/second_last.sql"
+                for line in open(sqlfile, encoding='UTF-8'):
+                    if len(line) == 0:
+                        continue
+
+                    query = line.replace('&&path&&', 'interprises_parsers/parsers/old_entity/files/' + date + '/legal_entity.csv', 1)
+                    cursor.execute(query)
+                    result = cursor.fetchone()
+
+        connection.commit()
+        print("History date "+date+" were imported to db")
+    except Exception as e:
+        print("import to db error: %s" % str(e))
+    finally:
+        connection.close()
 
 def setChanges():
-    for filename in os.listdir(dir_path + '/files/stat.gov.kz/old_entity'):
+    for filename in os.listdir(dir_path + '/files'):
         old_dirs.append(filename)
 
     old_dirs.sort(key=lambda x: time.mktime(time.strptime(x, "%d.%m.%y")))
-    old_dirs.reverse()
+    # old_dirs.reverse()
 
     old_standard = [2, 9, 10]
     new_standard = [1, 14,15]
@@ -56,7 +118,14 @@ def setChanges():
 
     fieldnames = [
         'name_ru',
+        'register_date'
         'address',
+        'company_size_code',
+        'economic_activity_codes',
+        'economic_activity_code',
+        'territory_code',
+        'active',
+        'resident',
         'CEO'
     ]
 
@@ -68,84 +137,30 @@ def setChanges():
         'date_of_change',
     ]
 
-    with open(dir_path + '/history.csv', 'w', encoding='UTF-8') as csvfile_write:
+    firstDate(old_dirs[0])
+    #
+    # old_dirs.remove(old_dirs[0])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
+    # old_dirs.remove(old_dirs[1])
 
-        csv_writer = csv.DictWriter(csvfile_write, fieldnames=csv_fields, delimiter='\t', quotechar='"',
-                                    escapechar='\\', quoting=csv.QUOTE_NONNUMERIC, lineterminator='\n')
-        csv_writer.writerow({
-            'BIN': 'BIN',
-            'field_name': 'field_name',
-            'old_value': 'old_value',
-            'new_value': 'new_value',
-            'date_of_change': 'date_of_change'
-        })
+    for i in old_dirs:
+        dates(i)
+        # print(i)
 
-        if (os.path.isfile(dir_path + '/files/stat.gov.kz/old_entity/' + old_dirs[0] + '/csv/legal_entity.csv')):
-            with io.open(dir_path + '/files/stat.gov.kz/old_entity/' + old_dirs[0] + '/csv/legal_entity.csv',
-                         encoding='utf-8') as parent_file:
-                parent_reader = csv.reader(parent_file, delimiter='\t')
-                for row_parent in parent_reader:
-                    # print(row_parent)
 
-                    if (len(row_parent) == 18):
-                        parent_count_array = new_standard
-                    else:
-                        parent_count_array = old_standard
-
-                    for j in range(len(parent_count_array)):
-                        # print(row_parent[parent_count_array[i]])
-                        for k in range(len(old_dirs)):
-                            print('finding in path: ' + old_dirs[k])
-                            if (os.path.isfile(dir_path + '/files/stat.gov.kz/old_entity/' + old_dirs[
-                                k] + '/csv/legal_entity.csv')):
-                                with io.open(dir_path + '/files/stat.gov.kz/old_entity/' + old_dirs[
-                                    k] + '/csv/legal_entity.csv', encoding='utf-8') as child_file:
-                                    child_reader = csv.reader(child_file, delimiter='\t')
-                                    for row_child in child_reader:
-                                        # print(row_child)
-                                        if row_parent[0] == row_child[0]:
-                                            if (len(row_child) == 18):
-                                                clild_count_array = new_standard
-                                                fields = new_fields
-                                            else:
-                                                clild_count_array = old_standard
-                                                fields = old_fields
-                                            print('============')
-                                            print(old_dirs[k])
-
-                                            print(row_parent[0])
-                                            print(fields[clild_count_array[j]])
-                                            print(row_parent[parent_count_array[j]])
-                                            print(row_child[clild_count_array[j]])
-                                            print('============')
-
-                                            if (row_parent[parent_count_array[j]] != row_child[clild_count_array[j]]):
-                                                print('---------------')
-                                                print('CHANGE DETECTED')
-
-                                                if (row_child[clild_count_array[j]] == '') or (
-                                                        row_parent[parent_count_array[j]] == ''):
-                                                    break
-
-                                                with io.open(dir_path + '/history.csv', encoding='utf-8') as csvfile:
-                                                    history = csv.reader(csvfile, delimiter='\t')
-
-                                                    for row_history in history:
-                                                        if (row_history[0] == row_parent[0]):
-                                                            if (row_history[2] == row_child[clild_count_array[j]]):
-                                                                break
-
-                                                print('writing...')
-
-                                                csv_writer.writerow({
-                                                    'BIN': 'test1',
-                                                    'field_name': 'test2',
-                                                    'old_value': 'test3',
-                                                    'new_value': 'test4',
-                                                    'date_of_change': 'test5'
-                                                })
-                                                print('CHANGE WRITED')
-                                                print('---------------')
-
+    connection.close()
 
 setChanges()

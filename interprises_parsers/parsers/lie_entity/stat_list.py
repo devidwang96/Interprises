@@ -72,13 +72,41 @@ def from_excel_to_txt(filename):
     f.close()
 
 
+def download_file():
+    if not os.path.exists('interprises_parsers/parsers/lie_entity/files/stat.gov.kz/'):
+        os.makedirs('interprises_parsers/parsers/lie_entity/files/stat.gov.kz/')
+
+
+    file_url = 'http://kgd.gov.kz/sites/default/files/LZHE/07.02.2018_rus.xls'
+    print("start to download file %s" % file_url)
+
+    temp_filename, headers = urllib.request.urlretrieve(file_url)
+
+    filename = '07.02.2018_rus.xls'
+    local_filename = 'interprises_parsers/parsers/lie_entity/files/stat.gov.kz/' + filename
+    filename, file_extension = os.path.splitext(local_filename)
+
+
+    if file_extension in ['.zip', '.xls', '.xlsx']:
+        if not os.path.isfile(local_filename):
+            copyfile(temp_filename, local_filename)
+            print("copy file %s" % local_filename)
+        else:
+            print("%s file from %s is already here" % (local_filename, file_url))
+            os.remove(local_filename)
+            copyfile(temp_filename, local_filename)
+            print("copy file %s" % local_filename)
+    else:
+        print("%s file from %s unexpected extension" % (local_filename, file_url))
+
+
+
 def convertFile():
     lie_entity_folder = 'interprises_parsers/parsers/lie_entity/'
-
-    for filename in os.listdir(lie_entity_folder + 'files'):
-        txt_name = lie_entity_folder + 'files/' + filename.replace(".xlsx", ".txt").replace(".xls", ".txt")
+    for filename in os.listdir(lie_entity_folder + 'files/stat.gov.kz'):
+        txt_name = lie_entity_folder + 'files/stat.gov.kz/' + filename.replace(".xlsx", ".txt").replace(".xls", ".txt")
         if not os.path.isfile(txt_name):
-            from_excel_to_txt(lie_entity_folder + 'files/' + filename)
+            from_excel_to_txt(lie_entity_folder + 'files/stat.gov.kz/' + filename)
             print(filename + " was converted to txt")
             logging.debug(filename + " was converted to txt")
 
@@ -99,11 +127,11 @@ def convertFile():
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter='\t', quotechar='"', escapechar='\\',
                                 quoting=csv.QUOTE_NONNUMERIC, lineterminator='\n')
         writer.writeheader()
-        for filename in os.listdir(lie_entity_folder + 'files'):
+        for filename in os.listdir(lie_entity_folder + 'files/stat.gov.kz'):
             if ".txt" not in filename[-4:]:
                 continue
             k = 0
-            with io.open(lie_entity_folder + 'files/' + filename, 'r', encoding='UTF-8') as f:
+            with io.open(lie_entity_folder + 'files/stat.gov.kz/' + filename, 'r', encoding='UTF-8') as f:
                 for line in f:
                     v = line.split('\t')
                     values = []
@@ -195,5 +223,6 @@ def find_branches(company_ids):
         i = i + 1
     return branches
 
+download_file()
 convertFile()
 import_to_db()

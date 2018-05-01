@@ -8491,6 +8491,29 @@ button.close {
   outline: none !important;
 }
 
+button.main-collapse {
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+button.main-collapse i {
+  transform: rotate(-180deg);
+  transition: all .5s;
+  display: inline-block;
+}
+
+button.main-collapse i img {
+  width: 20px;
+  height: 20px;
+}
+
+button.main-collapse.collapsed i {
+  transform: rotate(0deg);
+}
+
 body {
   font-family: 'Lato';
 }
@@ -8694,29 +8717,6 @@ form input[type="text"] {
 .page-company .company__history .history {
   padding: 15px 0;
   border-bottom: 1px dashed #000;
-}
-
-.page-company .company__history button {
-  font-weight: bold;
-  border: none;
-  background-color: transparent;
-  text-decoration: underline;
-  font-size: 18px;
-}
-
-.page-company .company__history button i {
-  transform: rotate(-180deg);
-  transition: all .5s;
-  display: inline-block;
-}
-
-.page-company .company__history button i img {
-  width: 20px;
-  height: 20px;
-}
-
-.page-company .company__history button.collapsed i {
-  transform: rotate(0deg);
 }
 
 .page-company .company__markers {

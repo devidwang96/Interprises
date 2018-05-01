@@ -24,7 +24,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\OSPanel\\domains\\interprises.test\\resources\\assets\\js\\components\\Pages\\Company.vue"
+Component.options.__file = "/home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Company.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Company.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -1794,6 +1794,21 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1801,6 +1816,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         return {
             companyBin: '',
             status: 'empty',
+            oked: '',
+            kato: '',
             results: {
                 company: {}
             },
@@ -1817,27 +1834,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             this.historyStatus = 'loading';
             __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/backend/history/' + this.companyBin).then(function (response) {
                 var historyResponse = response.data;
-                var historyRows = [
-                    // {
-                    //     field: 'CEO',
-                    //     oldValue: 'КРЫКБАЕВ АСКАР САНАТОВИЧ',
-                    //     date: '12.06.17'
-                    // }
-                ];
+                var historyRows = [];
                 var historyFields = ['CEO', 'name_ru', 'address', 'active', 'territory_code', 'economic_activity_code'];
 
                 for (var i in historyResponse) {
                     for (var j in historyFields) {
                         if (historyResponse[i][historyFields[j]] != _this.results.company[historyFields[j]]) {
                             var push = true;
-                            console.log(historyFields[j]);
-                            console.log(historyResponse[i][historyFields[j]]);
-                            console.log(historyResponse[i].update_date);
-                            // console.log(this.results.company[historyFields[j]]);
 
                             for (var k in historyRows) {
                                 if (historyRows[k].oldValue == historyResponse[i][historyFields[j]]) {
-                                    console.log('Нет! Такой уже есть');
                                     push = false;
                                 }
                             }
@@ -1851,35 +1857,63 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                         }
                     }
                 }
-
-                console.log('Сформированная история компании:');
-                console.log(historyRows);
-                console.log(historyRows.length);
                 if (historyRows.length > 0) {
                     _this.historyStatus = 'success';
                     _this.history = historyRows;
                 } else {
                     _this.historyStatus = 'empty';
                 }
+                _this.getKato();
+                _this.getOked();
             }).catch(function (error) {
                 console.log(error);
                 _this.historyStatus = 'error';
             });
         },
-        getData: function getData() {
+        getKato: function getKato() {
             var _this2 = this;
+
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/backend/kato/' + this.results.company.territory_code).then(function (response) {
+                if (response.data[0].name__ru == '' || response.data[0].name__ru == undefined) {
+                    _this2.kato = 'Нет данных...';
+                } else {
+                    _this2.kato = response.data[0].name__ru;
+                }
+                console.log(_this2.kato);
+            }).catch(function (error) {
+                console.log(error);
+                _this2.status = 'error';
+            });
+        },
+        getOked: function getOked() {
+            var _this3 = this;
+
+            __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/backend/oked/' + this.results.company.economic_activity_code).then(function (response) {
+                if (response.data[0].name_ru == '' || response.data[0].name_ru == undefined) {
+                    _this3.oked = 'Нет данных...';
+                } else {
+                    _this3.oked = response.data[0].name_ru;
+                }
+
+                console.log(_this3.oked);
+            }).catch(function (error) {
+                console.log(error);
+                _this3.status = 'error';
+            });
+        },
+        getData: function getData() {
+            var _this4 = this;
 
             this.status = 'loading';
             this.companyBin = this.$route.params.companyBin;
 
             __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get('/backend/company/' + this.companyBin).then(function (response) {
-                _this2.results = response.data;
-                _this2.results.length == 0 ? _this2.status = 'not-found' : _this2.status = 'done';
-                console.log(_this2.results);
-                _this2.getHistory();
+                _this4.results = response.data;
+                _this4.results.length == 0 ? _this4.status = 'not-found' : _this4.status = 'done';
+                _this4.getHistory();
             }).catch(function (error) {
                 console.log(error);
-                _this2.status = 'error';
+                _this4.status = 'error';
             });
         },
         ceoInfo: function ceoInfo() {
@@ -1947,7 +1981,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "marker red"
   }, [_vm._v("Есть")])]), _vm._v(" "), (_vm.results.ceo.interprises.length > 1) ? _c('div', {
     staticClass: "director__interprises"
-  }, [_c('h3', [_vm._v(_vm._s(_vm.results.company.CEO) + " Также является владельцем следующих " + _vm._s(_vm.results.ceo.interprises.length) + " предприятий ...")]), _vm._v(" "), _vm._l((_vm.results.ceo.interprises), function(item, index) {
+  }, [_c('h3', [_vm._v(_vm._s(_vm.results.company.CEO) + " Также является владельцем следующих\n                                        " + _vm._s(_vm.results.ceo.interprises.length) + " предприятий ...")]), _vm._v(" "), _vm._l((_vm.results.ceo.interprises), function(item, index) {
     return _c('p', [_c('router-link', {
       attrs: {
         "to": {
@@ -1963,16 +1997,38 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("\n                            Дата основания: " + _vm._s(_vm.results.company.register_date) + "\n                        ")]), _vm._v(" "), _c('p', {
     staticClass: "company__bin"
   }, [_vm._v("\n                            БИН: " + _vm._s(_vm.results.company.BIN) + "\n                        ")]), _vm._v(" "), _c('p', {
-    staticClass: "company__oked"
-  }, [_vm._v("\n                            ОКЭД: " + _vm._s(_vm.results.company.economic_activity_code) + "\n                        ")]), _vm._v(" "), _c('p', {
-    staticClass: "company__kato"
-  }, [_vm._v("\n                            КАТО: " + _vm._s(_vm.results.company.territory_code) + "\n                        ")]), _vm._v(" "), _c('p', {
     staticClass: "company__status"
   }, [_vm._v("\n                            Статус:\n                            "), (_vm.results.company.active == 1) ? _c('span', {
     staticClass: "marker green active"
   }, [_vm._v("В работе")]) : _c('span', {
     staticClass: "marker red"
-  }, [_vm._v("Не работает")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Не работает")])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('div', {
+    staticClass: "company__oked"
+  }, [_c('button', {
+    staticClass: "collapsed main-collapse",
+    attrs: {
+      "data-toggle": "collapse",
+      "data-target": "#oked"
+    }
+  }, [_vm._v("\n                                ОКЭД: " + _vm._s(_vm.results.company.economic_activity_code)), _vm._m(0)]), _vm._v(" "), _c('div', {
+    staticClass: "collapse",
+    attrs: {
+      "id": "oked"
+    }
+  }, [_vm._v("\n                                " + _vm._s(_vm.oked) + "\n                            ")])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('p', {
+    staticClass: "company__kato"
+  }, [_c('button', {
+    staticClass: "collapsed main-collapse",
+    attrs: {
+      "data-toggle": "collapse",
+      "data-target": "#kato"
+    }
+  }, [_vm._v("\n                                КАТО: " + _vm._s(_vm.results.company.territory_code)), _vm._m(1)])]), _c('div', {
+    staticClass: "collapse",
+    attrs: {
+      "id": "kato"
+    }
+  }, [_vm._v("\n                            " + _vm._s(_vm.kato) + "\n                        ")]), _vm._v(" "), _c('p'), _vm._v(" "), _c('div', {
     staticClass: "company__markers"
   }, [_c('p', {
     staticClass: "company__bad"
@@ -2010,19 +2066,33 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     return _c('div', {
       staticClass: "history"
     }, [_c('button', {
-      staticClass: "collapsed",
+      staticClass: "collapsed main-collapse",
       attrs: {
         "data-toggle": "collapse",
         "data-target": '#history_' + index
       }
-    }, [_vm._v(_vm._s(item.date) + "\n                                "), _vm._m(0, true)]), _vm._v(" "), _c('div', {
+    }, [_vm._v(_vm._s(item.date) + "\n                                    "), _vm._m(2, true)]), _vm._v(" "), _c('div', {
       staticClass: "collapse",
       attrs: {
         "id": 'history_' + index
       }
-    }, [(item.field == 'CEO') ? _c('p', [_vm._v("\n                                        Был директор: "), _c('br'), _vm._v(" "), _c('b', [_vm._v(_vm._s(item.oldValue))])]) : _vm._e(), _vm._v(" "), (item.field == 'name_ru') ? _c('p', [_vm._v("\n                                        Было название: "), _c('br'), _vm._v(" "), _c('b', [_vm._v(_vm._s(item.oldValue))])]) : _vm._e(), _vm._v(" "), (item.field == 'address') ? _c('p', [_vm._v("\n                                        Был адрес: "), _c('br'), _vm._v(" "), _c('b', [_vm._v(_vm._s(item.oldValue))])]) : _vm._e(), _vm._v(" "), (item.field == 'active') ? _c('p', [_vm._v("\n                                        Компания "), (item.oldValue == 1) ? _c('b', [_vm._v(" работала")]) : _vm._e(), (item.oldValue == 0) ? _c('b', [_vm._v("не работала")]) : _vm._e()]) : _vm._e(), _vm._v(" "), (item.field == 'territory_code') ? _c('p', [_vm._v("\n                                    Был КАТО: "), _c('br'), _vm._v(" "), _c('b', [_vm._v(_vm._s(item.oldValue))])]) : _vm._e(), _vm._v(" "), (item.field == 'economic_activity_code') ? _c('p', [_vm._v("\n                                    Был ОКЭД: "), _c('br'), _vm._v(" "), _c('b', [_vm._v(_vm._s(item.oldValue))])]) : _vm._e()])])
+    }, [(item.field == 'CEO') ? _c('p', [_vm._v("\n                                        Был директор: "), _c('br'), _vm._v(" "), _c('b', [_vm._v(_vm._s(item.oldValue))])]) : _vm._e(), _vm._v(" "), (item.field == 'name_ru') ? _c('p', [_vm._v("\n                                        Было название: "), _c('br'), _vm._v(" "), _c('b', [_vm._v(_vm._s(item.oldValue))])]) : _vm._e(), _vm._v(" "), (item.field == 'address') ? _c('p', [_vm._v("\n                                        Был адрес: "), _c('br'), _vm._v(" "), _c('b', [_vm._v(_vm._s(item.oldValue))])]) : _vm._e(), _vm._v(" "), (item.field == 'active') ? _c('p', [_vm._v("\n                                        Компания "), (item.oldValue == 1) ? _c('b', [_vm._v(" работала")]) : _vm._e(), (item.oldValue == 0) ? _c('b', [_vm._v("не работала")]) : _vm._e()]) : _vm._e(), _vm._v(" "), (item.field == 'territory_code') ? _c('p', [_vm._v("\n                                        Был КАТО: "), _c('br'), _vm._v(" "), _c('b', [_vm._v(_vm._s(item.oldValue))])]) : _vm._e(), _vm._v(" "), (item.field == 'economic_activity_code') ? _c('p', [_vm._v("\n                                        Был ОКЭД: "), _c('br'), _vm._v(" "), _c('b', [_vm._v(_vm._s(item.oldValue))])]) : _vm._e()])])
   })) : _vm._e()])])]) : _vm._e()])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('i', [_c('img', {
+    attrs: {
+      "src": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+",
+      "alt": ""
+    }
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('i', [_c('img', {
+    attrs: {
+      "src": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+",
+      "alt": ""
+    }
+  })])
+},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('i', [_c('img', {
     attrs: {
       "src": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+",

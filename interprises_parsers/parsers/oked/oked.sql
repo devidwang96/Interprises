@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS `oked` (`code` VARCHAR(1000) DEFAULT NULL, `name_ru` VARCHAR(1000) DEFAULT NULL);
+CREATE TEMPORARY TABLE `oked_temp` (`code` VARCHAR(1000) DEFAULT NULL, `name_ru` VARCHAR(1000) DEFAULT NULL) DEFAULT CHARSET=utf8;
+LOAD DATA LOCAL INFILE 'interprises_parsers/tmp/oked.csv' IGNORE INTO TABLE oked_temp FIELDS TERMINATED BY '\t' ENCLOSED BY '"' ESCAPED BY '\\' LINES TERMINATED BY '\n' IGNORE 1 LINES (`code`, `name_ru`);
+INSERT INTO oked ( `code`, `name_ru`) SELECT   `code`, `name_ru` FROM oked_temp ON DUPLICATE KEY UPDATE   `code` = VALUES(`code`), `name_ru` = VALUES(`name_ru`);

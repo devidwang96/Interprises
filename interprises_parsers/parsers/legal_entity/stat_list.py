@@ -81,7 +81,6 @@ def download_files():
     if not os.path.exists(today_folder):
         os.makedirs(today_folder)
 
-
     if not os.path.exists('interprises_parsers/tmp'):
         os.makedirs('interprises_parsers/tmp')
 
@@ -305,7 +304,14 @@ def download_files():
 
 
     copyfile(today_csv_folder + "legal_entity.csv", "interprises_parsers/tmp/legal_entity.csv")
-    logging.info(today_csv_folder + "legal_entity.csv" + " was copied to interprises_parsers/tmp/ folder")
+    print(today_csv_folder + "legal_entity.csv" + " was copied to interprises_parsers/tmp/ folder")
+
+    if not os.path.exists('interprises_parsers/parsers/old_entity/files/' + today):
+        os.makedirs('interprises_parsers/parsers/old_entity/files/' + today)
+
+    copyfile(today_csv_folder + "legal_entity.csv", "interprises_parsers/parsers/old_entity/files/" + today + '/legal_entity.csv')
+    print(today_csv_folder + "legal_entity.csv" + "was copied to interprises_parsers/parsers/old_entity/files/" + today + '/' + "folder")
+
     branches = find_branches(company_ids)
     with open(today_csv_folder + "legal_branche.csv", 'w', encoding='UTF-8') as csvfile:
         fieldnames = [
@@ -356,5 +362,5 @@ def find_branches(company_ids):
         i = i + 1
     return branches
 
-#download_files()
+download_files()
 import_to_db()

@@ -19,4 +19,6 @@ Route::group(['prefix' => 'backend'], function ($router) {
     $router->get('search/{query}', 'SearchController@index');
     $router->get('company/{bin}', 'CompanyController@index');
     $router->get('history/{bin}', 'HistoryController@index');
+    $router->get('kato/{kato}', 'CompanyController@getKato');
+    $router->get('oked/{oked}', 'CompanyController@getOked');
 });

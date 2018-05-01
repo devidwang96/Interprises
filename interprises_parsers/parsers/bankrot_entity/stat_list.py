@@ -53,7 +53,7 @@ def from_excel_to_txt(filename):
     if ".xls" not in filename[-5:]:
         return 0
     wb = open_workbook(filename)
-    f = io.open(filename.replace(".xls", ".txt"), 'w', encoding='utf8')
+    f = io.open(filename.replace(".xlsx", ".txt"), 'w', encoding='utf8')
     for s in wb.sheets():
         ok = False
         for row in range(s.nrows):
@@ -72,17 +72,44 @@ def from_excel_to_txt(filename):
     f.close()
 
 
+def download_file():
+    if not os.path.exists('interprises_parsers/parsers/bankrot_entity/files/stat.gov.kz/'):
+        os.makedirs('interprises_parsers/parsers/bankrot_entity/files/stat.gov.kz/')
+
+
+    file_url = 'http://kgd.gov.kz/sites/default/files/Reabilibankrotstvo/Spicok/spisok_bankrotov_v_otnoshenii_kotoryh_resheniya_suda_o_priznanii_ih_bankrotami_vstupili_v_zakonnuyu_silu_po_sostoyaniyu_na_01.01.2016_goda.xlsx'
+    print("start to download file %s" % file_url)
+
+    temp_filename, headers = urllib.request.urlretrieve(file_url)
+
+    filename = 'spisok_bankrotov_v_otnoshenii_kotoryh_resheniya_suda_o_priznanii_ih_bankrotami_vstupili_v_zakonnuyu_silu_po_sostoyaniyu_na_01.01.2016_goda.xlsx'
+    local_filename = 'interprises_parsers/parsers/bankrot_entity/files/stat.gov.kz/' + filename
+    filename, file_extension = os.path.splitext(local_filename)
+
+
+    if file_extension in ['.zip', '.xls', '.xlsx']:
+        if not os.path.isfile(local_filename):
+            copyfile(temp_filename, local_filename)
+            print("copy file %s" % local_filename)
+        else:
+            print("%s file from %s is already here" % (local_filename, file_url))
+            os.remove(local_filename)
+            copyfile(temp_filename, local_filename)
+            print("copy file %s" % local_filename)
+    else:
+        print("%s file from %s unexpected extension" % (local_filename, file_url))
+
+
 def convertFile():
 
     bankrot_entity_folder = 'interprises_parsers/parsers/bankrot_entity/'
 
-    for filename in os.listdir(bankrot_entity_folder + 'files'):
-        txt_name = bankrot_entity_folder + 'files/' + filename.replace(".xlsx", ".txt").replace(".xls", ".txt")
+    for filename in os.listdir(bankrot_entity_folder + 'files/stat.gov.kz'):
+        txt_name = bankrot_entity_folder + 'files/stat.gov.kz/' + filename.replace(".xlsx", ".txt").replace(".xls", ".txt")
         if not os.path.isfile(txt_name):
-            from_excel_to_txt(bankrot_entity_folder + 'files/' + filename)
+            from_excel_to_txt(bankrot_entity_folder + 'files/stat.gov.kz/' + filename)
             print(filename + " was converted to txt")
             logging.debug(filename + " was converted to txt")
-
 
 
     bankrot_ids = []
@@ -104,12 +131,14 @@ def convertFile():
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter='\t', quotechar='"', escapechar='\\',
                                 quoting=csv.QUOTE_NONNUMERIC, lineterminator='\n')
         writer.writeheader()
-        for filename in os.listdir(bankrot_entity_folder + 'files'):
+        for filename in os.listdir(bankrot_entity_folder + 'files/stat.gov.kz/'):
+
             if ".txt" not in filename[-4:]:
                 continue
             k = 0
 
-            with io.open(bankrot_entity_folder + 'files/' + filename, 'r', encoding='UTF-8') as f:
+
+            with io.open(bankrot_entity_folder + 'files/stat.gov.kz/' + filename, 'r', encoding='UTF-8') as f:
                 for line in f:
                     v = line.split('\t')
                     values = []
@@ -207,19 +236,6 @@ def import_to_db():
         connection.close()
 
 
-def find_branches(company_ids):
-    from operator import itemgetter, attrgetter, methodcaller
-    ll = sorted(company_ids, key=lambda x: x[0])
-    i = 0
-    #	head_stat_id = None
-    branches = []
-
-    for BIN in ll:
-        head_BIN = BIN
-        if BIN[5] == '1':
-            branches.append([BIN, head_BIN])
-        i = i + 1
-    return branches
-
+download_file()
 convertFile()
 import_to_db()

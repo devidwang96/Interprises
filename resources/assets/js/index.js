@@ -15,8 +15,6 @@ Vue.component(
 );
 
 
-
-
 Vue.component(
     'siteHeader',
     require('./components/Pages/Parts/Header.vue')
