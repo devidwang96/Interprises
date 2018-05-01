@@ -1,6 +1,16 @@
 <template>
     <div class="page page-company">
         <div class="container">
+
+            <div class="search">
+                <form @submit.prevent="localSearch">
+                    <input type="text"
+                           v-model="localQuery"
+                           placeholder="Искать предприятие...">
+                    <input type="submit" class="button button-primary" value="Искать">
+                </form>
+            </div>
+
             <div class="company-card">
                 <div v-if="status == 'loading'" class="loading">
                     Загрузка...
@@ -21,32 +31,54 @@
                             <p class="company__address">
                                 Юридический адрес: {{ results.company.address }}
                             </p>
-                            <p class="company__ceo" @click="ceoInfo()">
-                                Руководитель: {{ results.company.CEO }}
-                            </p>
-                            <div v-if="this.ceoInfoOpen">
-                                <div class="director">
-                                    <hr>
-                                    <h3 class="director__title"> {{ results.company.CEO }}</h3>
-                                    <p class="director__terror">
-                                        В базе террористов :
-                                        <span v-if="results.ceo.terror == 0" class="marker green">Нет</span>
-                                        <span v-else class="marker red">Есть</span>
-                                    </p>
+                            <div class="company__ceo" @click="ceoInfo()">
+                                <button class="collapsed main-collapse" data-toggle="collapse" data-target="#ceo">
+                                    Руководитель: {{ results.company.CEO }}<i><img
+                                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+"
+                                        alt=""></i>
+                                </button>
+                                <div id="ceo" class="collapse">
+                                    <div class="director">
+                                        <hr>
+                                        <h3 class="director__title"> {{ results.company.CEO }}</h3>
 
-                                    <div v-if="results.ceo.interprises.length > 1" class="director__interprises">
-                                        <h3>{{ results.company.CEO }} Также является владельцем следующих
-                                            {{results.ceo.interprises.length}} предприятий ...</h3>
-                                        <p v-for="(item, index) in results.ceo.interprises">
-                                            <router-link :to="{ name: 'company', params: { companyBin: item.id }}">
-                                                {{ item.name_ru }}
-                                            </router-link>
+                                        <p class="director__terror">
+                                            В базе плательщиков с задолжностью :
+                                            <span v-if="results.ceo.promiser == 0" class="marker green">Нет</span>
+                                            <span v-else class="marker red">Есть</span>
                                         </p>
-                                    </div>
 
-                                    <hr>
+                                        <p class="director__terror">
+                                            В базе розыскиваемых :
+                                            <span v-if="wanted == 'loading'">
+                                                Загрузка...
+                                            </span>
+                                            <span v-if="!wanted" class="marker green">Нет</span>
+                                            <span v-else class="marker red">Есть</span>
+                                        </p>
+
+                                        <p class="director__terror">
+                                            В базе террористов :
+                                            <span v-if="results.ceo.terror == 0" class="marker green">Нет</span>
+                                            <span v-else class="marker red">Есть</span>
+                                        </p>
+
+                                        <div v-if="results.ceo.interprises.length > 1" class="director__interprises">
+                                            <h3>{{ results.company.CEO }} Также является владельцем следующих
+                                                {{results.ceo.interprises.length}} предприятий ...</h3>
+                                            <p v-for="(item, index) in results.ceo.interprises">
+                                                <router-link :to="{ name: 'company', params: { companyBin: item.BIN }}">
+                                                    {{ item.name_ru }}
+                                                </router-link>
+                                            </p>
+                                        </div>
+
+                                        <hr>
+                                    </div>
                                 </div>
+
                             </div>
+
 
                             <p class="company__date">
                                 Дата основания: {{ results.company.register_date }}
@@ -74,16 +106,81 @@
                                 </div>
                             </div>
                             <br>
-                            <p class="company__kato">
+                            <div class="company__kato">
                                 <button class="collapsed main-collapse" data-toggle="collapse" data-target="#kato">
                                     КАТО: {{ results.company.territory_code }}<i><img
                                         src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+"
                                         alt=""></i>
                                 </button>
-                            <div id="kato" class="collapse">
-                                {{kato}}
+                                <div id="kato" class="collapse">
+                                    {{kato}}
+                                </div>
                             </div>
-                            </p>
+                            <br>
+                            <div class="company__filials">
+                                <div v-if="isFilial">
+                                    <div>
+                                        <button class="collapsed main-collapse" data-toggle="collapse" data-target="#head-company">
+                                            Головное предприятие<i><img
+                                                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+"
+                                                alt=""></i>
+                                        </button>
+                                        <div id="head-company" class="collapse">
+                                            <br>
+                                            <p v-if="head == ''">
+                                                Головное предприятия к сожалению не найдено!
+                                            </p>
+                                            <p v-else>
+                                                <router-link :to="{ name: 'company', params: { companyBin: head.BIN }}">
+                                                    {{ head.name }}
+                                                </router-link>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <br>
+
+                                    <div>
+                                        <button class="collapsed main-collapse" data-toggle="collapse" data-target="#other-filials">
+                                            Другие филлиалы<i><img
+                                                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+"
+                                                alt=""></i>
+                                        </button>
+                                        <div id="other-filials" class="collapse">
+                                            <br>
+                                            <p v-if="filials == ''">
+                                                У данного предприятия больше нет филиалов
+                                            </p>
+                                            <p v-else v-for="filial in filials">
+                                                <router-link :to="{ name: 'company', params: { companyBin: filial.BIN }}">
+                                                    {{ filial.name }}
+                                                </router-link>
+                                                <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div v-else>
+                                    <button class="collapsed main-collapse" data-toggle="collapse" data-target="#filials">
+                                        Филлиалы предприятия<i><img
+                                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+"
+                                            alt=""></i>
+                                    </button>
+                                    <div id="filials" class="collapse">
+                                        <p v-if="filials == ''">
+                                            У данного предприятия нет филиалов
+                                        </p>
+                                        <p v-else v-for="filial in filials">
+                                            <router-link :to="{ name: 'company', params: { companyBin: filial.BIN }}">
+                                                {{ filial.name }}
+                                            </router-link>
+                                            <br>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
 
                             <div class="company__markers">
                                 <p class="company__bad">
@@ -98,10 +195,30 @@
                                     <span v-else class="marker red">Есть</span>
                                 </p>
 
+
+                                <p class="company__bad">
+                                    В базе плательщиков, отсутствующих по Юридическому адресу :
+                                    <span v-if="results.jur == 0" class="marker green">Нет</span>
+                                    <span v-else class="marker red">Есть</span>
+                                </p>
+
+                                <p class="company__bankrot">
+                                    В базе плательщиков, нарушающие нормы Налогового кодекса :
+                                    <span v-if="results.codex == 0" class="marker green">Нет</span>
+                                    <span v-else class="marker red">Есть</span>
+                                </p>
+
+
                                 <p class="company__exbankrot">
                                     В базе бывших банкротов :
                                     <span v-if="results.exbankrot == 0" class="marker green">Нет</span>
                                     <span v-else class="marker red">Есть</span>
+                                </p>
+
+                                <p class="company__good">
+                                    В базе налоговых должников :
+                                    <span v-if="results.promiser == 0" class="marker green">Нет</span>
+                                    <span v-else class="marker green">Есть</span>
                                 </p>
 
                                 <p class="company__good">
@@ -118,44 +235,60 @@
                             </div>
                         </div>
                         <div class="col-md-4 company__history">
-                            <h3>История компании</h3>
-                            <p v-if="historyStatus == 'empty'">
-                                У данной компании еще пока нет изменений
-                            </p>
-                            <div v-if="historyStatus == 'success'">
-                                <div class="history" v-for="(item, index) in history">
-                                    <button class="collapsed main-collapse" data-toggle="collapse"
-                                            :data-target="'#history_' + index">{{ item.date }}
-                                        <i><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+"
-                                                alt=""></i></button>
-                                    <div :id="'history_' + index" class="collapse">
-                                        <p v-if="item.field == 'CEO'">
-                                            Был директор: <br>
-                                            <b>{{ item.oldValue }}</b>
-                                        </p>
-                                        <p v-if="item.field == 'name_ru'">
-                                            Было название: <br>
-                                            <b>{{ item.oldValue }}</b>
-                                        </p>
-                                        <p v-if="item.field == 'address'">
-                                            Был адрес: <br>
-                                            <b>{{ item.oldValue }}</b>
-                                        </p>
-                                        <p v-if="item.field == 'active'">
-                                            Компания <b v-if="item.oldValue == 1"> работала</b><b
-                                                v-if="item.oldValue == 0">не работала</b>
-                                        </p>
-                                        <p v-if="item.field == 'territory_code'">
-                                            Был КАТО: <br>
-                                            <b>{{ item.oldValue }}</b>
-                                        </p>
-                                        <p v-if="item.field == 'economic_activity_code'">
-                                            Был ОКЭД: <br>
-                                            <b>{{ item.oldValue }}</b>
-                                        </p>
+                            <div v-if="$store.state.authState == 'guest'">
+                                Для просмотра истории компании необходимо авторизоваться:
+                                <br>
+                                <br>
+                                <router-link v-if="$store.state.authState == 'guest'" class="button button-primary" :to="{ name: 'login'}">
+                                    Войти
+                                </router-link>
+
+                                <router-link v-if="$store.state.authState == 'guest'" class="button button-primary" :to="{ name: 'register'}">
+                                    Зарегистрироваться
+                                </router-link>
+                            </div>
+
+                            <div v-else>
+                                <h3>История компании</h3>
+                                <p v-if="historyStatus == 'empty'">
+                                    У данной компании еще пока нет изменений
+                                </p>
+                                <div v-if="historyStatus == 'success'">
+                                    <div class="history" v-for="(item, index) in history">
+                                        <button class="collapsed main-collapse" data-toggle="collapse"
+                                                :data-target="'#history_' + index">{{ item.date }}
+                                            <i><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUwIDUwIiBoZWlnaHQ9IjUwcHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MCA1MCIgd2lkdGg9IjUwcHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxyZWN0IGZpbGw9Im5vbmUiIGhlaWdodD0iNTAiIHdpZHRoPSI1MCIvPjxwb2x5Z29uIHBvaW50cz0iNDcuMjUsMTUgNDUuMTY0LDEyLjkxNCAyNSwzMy4wNzggNC44MzYsMTIuOTE0IDIuNzUsMTUgMjUsMzcuMjUgIi8+PC9zdmc+"
+                                                    alt=""></i></button>
+                                        <div :id="'history_' + index" class="collapse">
+                                            <p v-if="item.field == 'CEO'">
+                                                Был директор: <br>
+                                                <b>{{ item.oldValue }}</b>
+                                            </p>
+                                            <p v-if="item.field == 'name_ru'">
+                                                Было название: <br>
+                                                <b>{{ item.oldValue }}</b>
+                                            </p>
+                                            <p v-if="item.field == 'address'">
+                                                Был адрес: <br>
+                                                <b>{{ item.oldValue }}</b>
+                                            </p>
+                                            <p v-if="item.field == 'active'">
+                                                Компания <b v-if="item.oldValue == 1"> работала</b><b
+                                                    v-if="item.oldValue == 0">не работала</b>
+                                            </p>
+                                            <p v-if="item.field == 'territory_code'">
+                                                Был КАТО: <br>
+                                                <b>{{ item.oldValue }}</b>
+                                            </p>
+                                            <p v-if="item.field == 'economic_activity_code'">
+                                                Был ОКЭД: <br>
+                                                <b>{{ item.oldValue }}</b>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -173,9 +306,14 @@
         data() {
             return {
                 companyBin: '',
+                localQuery: '',
                 status: 'empty',
                 oked: '',
                 kato: '',
+                isFilial : false,
+                filials: '',
+                wanted: '',
+                head: '',
                 results: {
                     company: {},
                 },
@@ -185,6 +323,44 @@
             }
         },
         methods: {
+            localSearch(){
+                if(this.localQuery != ''){
+                    this.query = this.localQuery;
+                    this.$router.push({name : 'search', query : {query : this.query}});
+                }
+            },
+            getWanted(){
+                this.wanted == 'loading';
+                axios.get('/backend/wanted/' + this.results.company.BIN)
+                    .then((response) => {
+                        console.log(response.data);
+                        this.wanted = response.data
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                        this.wanted == 'error';
+                    });
+            },
+            getHead(){
+                axios.get('/backend/head/' + this.results.company.BIN)
+                    .then((response) => {
+                        console.log(response.data);
+                        this.head = response.data
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    });
+            },
+            getFilials(){
+                axios.get('/backend/filials/' + this.results.company.BIN)
+                    .then((response) => {
+                        console.log(response.data);
+                        this.filials = response.data
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    });
+            },
             getHistory() {
                 this.historyStatus = 'loading';
                 axios.get('/backend/history/' + this.companyBin)
@@ -250,7 +426,6 @@
                     })
                     .catch((error) => {
                         console.log(error);
-                        this.status = 'error';
                     });
             },
             getOked() {
@@ -262,12 +437,10 @@
                             this.oked = response.data[0].name_ru;
                         }
 
-
                         console.log(this.oked);
                     })
                     .catch((error) => {
                         console.log(error);
-                        this.status = 'error';
                     });
             },
 
@@ -279,6 +452,16 @@
                     .then((response) => {
                         this.results = response.data;
                         this.results.length == 0 ? this.status = 'not-found' : this.status = 'done';
+
+                        if(this.results.company.BIN[5] == 1){
+                            this.isFilial = true;
+                            this.getFilials();
+                            this.getHead();
+                        } else {
+                            this.isFilial = false;
+                            this.getFilials();
+                        }
+
                         this.getHistory();
                     })
                     .catch((error) => {
@@ -289,8 +472,7 @@
             },
             ceoInfo() {
                 this.ceoInfoOpen = !this.ceoInfoOpen;
-
-
+                this.getWanted();
             }
         },
         created() {

@@ -79,7 +79,11 @@ class UpdateInterprises extends Command
 //        Schema::dropIfExists('old_branche');
 //        Schema::dropIfExists('legal_entity_history');
 //        Schema::dropIfExists('kato');
-        Schema::dropIfExists('oked');
+//        Schema::dropIfExists('kato');
+//        Schema::dropIfExists('oked');
+//        Schema::dropIfExists('promiser_entity');
+//        Schema::dropIfExists('codex_entity');
+        Schema::dropIfExists('jur_exist_entity');
 
         if (PHP_OS == 'WINNT') {
 
@@ -113,10 +117,18 @@ class UpdateInterprises extends Command
 //
 //            $output = shell_exec('python3 interprises_parsers/parsers/kato/kato.py ' . $host . ' ' . $user . ' ' . $pass . ' ' . $db);
 //            echo $output;
+//
+//            $output = shell_exec('python3 interprises_parsers/parsers/oked/oked.py ' . $host . ' ' . $user . ' ' . $pass . ' ' . $db);
+//            echo $output;
+//
+//            $output = shell_exec('python3 interprises_parsers/parsers/promiser_entity/promiser.py ' . $host . ' ' . $user . ' ' . $pass . ' ' . $db);
+//            echo $output;
 
-            $output = shell_exec('python3 interprises_parsers/parsers/oked/oked.py ' . $host . ' ' . $user . ' ' . $pass . ' ' . $db);
+//            $output = shell_exec('python3 interprises_parsers/parsers/codex_entity/codex.py ' . $host . ' ' . $user . ' ' . $pass . ' ' . $db);
+//            echo $output;
+
+            $output = shell_exec('python3 interprises_parsers/parsers/jur_exist_entity/jur_exist.py ' . $host . ' ' . $user . ' ' . $pass . ' ' . $db);
             echo $output;
-
 
         }
     }

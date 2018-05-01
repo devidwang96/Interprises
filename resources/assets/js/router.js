@@ -21,6 +21,24 @@ const routes = [
         }
     },
     {
+        path: '/login',
+        name: 'login',
+        component: resolve => {
+            require.ensure(['./components/Pages/Login.vue'], () => {
+                resolve(require('./components/Pages/Login.vue'))
+            })
+        }
+    },
+    {
+        path: '/register',
+        name: 'register',
+        component: resolve => {
+            require.ensure(['./components/Pages/Register.vue'], () => {
+                resolve(require('./components/Pages/Register.vue'))
+            })
+        }
+    },
+    {
         path: '/company/:companyBin',
         name: 'company',
         component: resolve => {

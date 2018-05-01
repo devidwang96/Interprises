@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS `jur_exist_entity` (`BIN` VARCHAR(1000) DEFAULT NULL, `name` VARCHAR(1000) DEFAULT NULL);
+CREATE TEMPORARY TABLE `jur_exist_entity_temp` ( `BIN` VARCHAR(1000) DEFAULT NULL, `name` VARCHAR(1000) DEFAULT NULL) DEFAULT CHARSET=utf8;
+LOAD DATA LOCAL INFILE 'interprises_parsers/tmp/jur_exist.csv' IGNORE INTO TABLE jur_exist_entity_temp FIELDS TERMINATED BY '\t' ENCLOSED BY '"' ESCAPED BY '\\' LINES TERMINATED BY '\n' IGNORE 1 LINES (`BIN`, `name`);
+INSERT INTO jur_exist_entity ( `BIN`, `name`) SELECT `BIN`, `name` FROM jur_exist_entity_temp ON DUPLICATE KEY UPDATE `BIN` = VALUES(`BIN`), `name` = VALUES(`name`);

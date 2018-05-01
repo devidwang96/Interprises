@@ -2,83 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28b868e0-455a-46ba-abc3-df55ac87926a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/kato/files/katonew1.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/kato/files/katonew2.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/kato/kato.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/kato/kato.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/filials.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/filials.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/oked/files/oked.xls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/oked/oked.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/oked/oked.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/FirstCreation.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/after first files/date.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/after first files/date.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/after first files/history_second_last.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/after first files/second_last.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/new_second_last.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/only for first folder!/history_first.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/second_last.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/codex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/codex.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_0301.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_0601.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_0901.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_1501.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_1801.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_2101.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_2701.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_3001.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_3301.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_3901.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_4301.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_4501.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_4801.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_5801.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_6001.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/list_VIOLATION_TAX_CODE_6201.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_0301.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_0601.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_0901.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_1501.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_1801.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_2101.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_2701.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_3001.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_3301.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_3901.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_4301.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_4501.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_4801.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_5801.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_6001.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files/list_WRONG_ADDRESS_6201.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/jur_exist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/jur_exist.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/files/svod_urz-1_za_1_kvartal_2018_goda_na_sayt.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/files/svod_urz_-1_za_2017_god.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/promiser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/promiser.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/Pages/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/Pages/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/interprises.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/interprises.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/UpdateInterprises.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/UpdateInterprises.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/bad_entity/files/bad_entity.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/bad_entity/files/bad_entity.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/bad_entity/files/bad_entity.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/bad_entity/logs/load_list.log" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/bad_entity/logs/load_list.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/bad_entity/stat_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/bad_entity/stat_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/bankrot_entity/files/bankrot_entity.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/bankrot_entity/files/spisok_bankrotov_v_otnoshenii_kotoryh_resheniya_suda_o_priznanii_ih_bankrotami_vstupili_v_zakonnuyu_silu_po_sostoyaniyu_na_01.01.2016_goda.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/bankrot_entity/files/spisok_bankrotov_v_otnoshenii_kotoryh_resheniya_suda_o_priznanii_ih_bankrotami_vstupili_v_zakonnuyu_silu_po_sostoyaniyu_na_01.01.2016_goda.txtx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/bankrot_entity/files/spisok_bankrotov_v_otnoshenii_kotoryh_resheniya_suda_o_priznanii_ih_bankrotami_vstupili_v_zakonnuyu_silu_po_sostoyaniyu_na_01.01.2016_goda.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/bankrot_entity/logs/load_list.log" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/bankrot_entity/logs/load_list.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/bankrot_entity/stat_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/bankrot_entity/stat_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/exbankrot_entity/files/exbankrot_entity.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/exbankrot_entity/files/spisok_bankrotov_v_otnoshenii_kotoryh_procedura_bankrotstva_zavershena_v_2015_godu.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/exbankrot_entity/files/spisok_bankrotov_v_otnoshenii_kotoryh_procedura_bankrotstva_zavershena_v_2015_godu.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/exbankrot_entity/logs/load_list.log" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/exbankrot_entity/logs/load_list.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/exbankrot_entity/stat_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/exbankrot_entity/stat_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/good_entity/files/good_entity.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/good_entity/files/good_entity.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/good_entity/files/good_entity.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/good_entity/logs/load_list.log" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/good_entity/logs/load_list.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/good_entity/stat_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/good_entity/stat_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/import.sql" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/import.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/logs/load_list.log" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/logs/load_list.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/stat_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/stat_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/lie_entity/files/07.02.2018_rus.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/lie_entity/files/07.02.2018_rus.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/lie_entity/files/lie_entity.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/lie_entity/logs/load_list.log" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/lie_entity/logs/load_list.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/lie_entity/stat_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/lie_entity/stat_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/init-changes.py" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/init-changes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/terror_entity/files/terror_entity.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/terror_entity/files/terror_entity.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/terror_entity/files/terror_entity.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/terror_entity/logs/load_list.log" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/terror_entity/logs/load_list.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interprises_parsers/parsers/terror_entity/stat_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/interprises_parsers/parsers/terror_entity/stat_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/1.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/3.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/4.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/4.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/js/components/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/components/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/assets/js/components/Pages/Company.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/components/Pages/Company.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/interprise.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/interprise.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/sass/standard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/sass/standard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/js/components/Pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/components/Pages/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/js/components/Pages/Parts/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/components/Pages/Parts/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/js/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/js/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/app/public/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/app/public/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/cache/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/testing/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/testing/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/logs/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,11 +88,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="262">
-      <file leaf-file-name="oked.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/oked/oked.py">
+      <file leaf-file-name="Register.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Register.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+            <state relative-caret-position="187">
+              <caret line="98" column="14" lean-forward="true" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Login.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Search.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Search.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="86" column="23" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -118,94 +128,72 @@
       <file leaf-file-name="Company.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Company.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="258" column="98" selection-start-line="258" selection-start-column="98" selection-end-line="258" selection-end-column="98" />
+            <state relative-caret-position="321">
+              <caret line="235" column="30" lean-forward="true" selection-start-line="235" selection-start-column="30" selection-end-line="235" selection-end-column="30" />
               <folding>
-                <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#p#6;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#p#7;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="standard.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/sass/standard.scss">
+      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="713">
+              <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="interprise.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/assets/sass/interprise.scss">
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/components/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="536">
+              <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oked.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/oked/files/oked.txt">
+      <file leaf-file-name="Header.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Parts/Header.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="92" column="47" lean-forward="true" selection-start-line="92" selection-start-column="47" selection-end-line="92" selection-end-column="47" />
+            <state relative-caret-position="368">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="16" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oked.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/oked/oked.sql">
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+            <state relative-caret-position="552">
+              <caret line="55" column="58" lean-forward="true" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UpdateInterprises.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Console/Commands/UpdateInterprises.php">
+      <file leaf-file-name="store.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="116" column="54" selection-start-line="116" selection-start-column="54" selection-end-line="116" selection-end-column="54" />
+            <state relative-caret-position="184">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="17" />
               <folding>
-                <element signature="e#40#71#0#PHP" expanded="true" />
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-              <folding>
-                <element signature="e#7#389#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompanyController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompanyController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
-              <caret line="43" column="68" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="oked.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/oked.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="191">
+              <caret line="31" column="155" selection-start-line="31" selection-start-column="147" selection-end-line="31" selection-end-column="155" />
             </state>
           </provider>
         </entry>
@@ -214,20 +202,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ban</find>
-      <find>filename</find>
-      <find>exbankrot</find>
-      <find>legal_entity.csv</find>
-      <find>update_date</find>
-      <find>12.06.17</find>
-      <find>active</find>
-      <find>SELE</find>
-      <find>BIN, name_ru, register_date, economic_activity_code, economic_activity_codes, company_size_code, territory_code, address, CEO, active, resident</find>
-      <find>old_dirs[2]</find>
-      <find>BIN</find>
-      <find>stat_id</find>
-      <find>connection</find>
-      <find>update</find>
       <find>name_kk</find>
       <find>stat</find>
       <find>parent</find>
@@ -237,13 +211,27 @@
       <find>filials</find>
       <find>prepare_string</find>
       <find>company_ids</find>
-      <find>kato</find>
-      <find>,</find>
-      <find>;</find>
       <find>ibec</find>
       <find>name__ru</find>
       <find>xlsx</find>
+      <find>link</find>
+      <find>router-link</find>
+      <find>kato</find>
+      <find>,</find>
+      <find>;</find>
       <find>name_ru</find>
+      <find>promise</find>
+      <find>jur_exists</find>
+      <find>CEO</find>
+      <find>codex</find>
+      <find>sq</find>
+      <find>promiser</find>
+      <find>codex_entity.csv</find>
+      <find>ceoInfo</find>
+      <find>&lt;ul class=&quot;navbar-nav ml-auto&quot;&gt;</find>
+      <find>В систему</find>
+      <find>findRequest</find>
+      <find>errors</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -252,25 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/history.csv" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/12.06.17/csv/history_first.py" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/12.06.17/csv/FirstCreation.sql" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/08.04.18/csv/date.csv" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/08.04.18/csv/second_last.sql" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/08.04.18/csv/date.sql" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/08.04.18/csv/history_second_last.py" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/07.08.17/csv/date.csv" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/08.01.18/csv/date.csv" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/09.10.17/csv/date.csv" />
-        <option value="$PROJECT_DIR$/app/History.php" />
-        <option value="$PROJECT_DIR$/resources/assets/js/components/Pages/Search.vue" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/stat.gov.kz/old_entity/10.07.17/csv/date.csv" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HistoryController.php" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/import.sql" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/lie_entity/stat_list.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
-        <option value="$PROJECT_DIR$/interprises_parsers/parsers/bankrot_entity/stat_list.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py" />
         <option value="$PROJECT_DIR$/interprises_parsers/parsers/exbankrot_entity/stat_list.py" />
         <option value="$PROJECT_DIR$/interprises_parsers/parsers/terror_entity/stat_list.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
@@ -295,13 +264,32 @@
         <option value="$PROJECT_DIR$/interprises_parsers/parsers/kato/kato.py" />
         <option value="$PROJECT_DIR$/app/kato.php" />
         <option value="$PROJECT_DIR$/app/oked.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Console/Commands/UpdateInterprises.php" />
         <option value="$PROJECT_DIR$/interprises_parsers/parsers/oked/oked.sql" />
         <option value="$PROJECT_DIR$/interprises_parsers/parsers/oked/oked.py" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" />
         <option value="$PROJECT_DIR$/resources/assets/sass/interprise.scss" />
         <option value="$PROJECT_DIR$/resources/assets/sass/standard.scss" />
+        <option value="$PROJECT_DIR$/app/Filial.php" />
+        <option value="$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/promiser.sql" />
+        <option value="$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/promiser.py" />
+        <option value="$PROJECT_DIR$/app/Promiser.php" />
+        <option value="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/codex.py" />
+        <option value="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/jur_exists.py" />
+        <option value="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/jur_exists.sql" />
+        <option value="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/codex.sql" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/UpdateInterprises.php" />
+        <option value="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/jur_exist.sql" />
+        <option value="$PROJECT_DIR$/app/Codex.php" />
+        <option value="$PROJECT_DIR$/app/Jur.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" />
+        <option value="$PROJECT_DIR$/resources/assets/js/router.js" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/resources/assets/js/store.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
+        <option value="$PROJECT_DIR$/resources/assets/js/components/App.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/js/components/Pages/Register.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/js/components/Pages/Login.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/js/components/Pages/Home.vue" />
+        <option value="$PROJECT_DIR$/resources/assets/js/components/Pages/Parts/Header.vue" />
         <option value="$PROJECT_DIR$/resources/assets/js/components/Pages/Company.vue" />
       </list>
     </option>
@@ -395,13 +383,14 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/coderockr/php-query" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1685" />
-    <option name="y" value="268" />
-    <option name="width" value="1128" />
-    <option name="height" value="727" />
+    <option name="x" value="1400" />
+    <option name="y" value="-4" />
+    <option name="width" value="1920" />
+    <option name="height" value="1029" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -422,46 +411,88 @@
             <path>
               <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
               <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
-              <item name="interprises_parsers" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
               <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
-              <item name="interprises_parsers" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
               <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
-              <item name="interprises_parsers" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
-              <item name="oked" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
               <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
-              <item name="interprises_parsers" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
-              <item name="oked" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
               <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
               <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="interprises.test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="interprises.test" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -472,11 +503,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="standard.scss&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/sass/standard.scss&#10;compan&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Company.vue&#10;Update&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/app/Console/Commands/UpdateInterprises.php&#10;oked.py&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/interprises_parsers/parsers/oked/oked.py&#10;company&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/app/Http/Controllers/CompanyController.php&#10;web&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/routes/web.php&#10;secon&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/interprises_parsers/parsers/old_entity/second_last.sql&#10;company.v&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Company.vue&#10;цуи&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/routes/web.php&#10;update&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/app/Console/Commands/UpdateInterprises.php&#10;package&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/package.json&#10;standa&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/sass/standard.scss&#10;route&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/js/router.js&#10;home&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/js/components/Pages/Home.vue&#10;app&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/sass/app.scss&#10;web.php&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/routes/web.php&#10;index&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/public/index.php&#10;footer.scs&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/sass/footer.scss&#10;App.vu&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/js/components/App.vue&#10;sear&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/js/components/Pages/Search.vue&#10;index.js&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/js/index.js&#10;Upda&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/app/Console/Commands/UpdateInterprises.php&#10;Com&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/app/Http/Controllers/CompanyController.php&#10;Home.vu&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/js/components/Pages/Home.vue&#10;search&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/app/Http/Controllers/SearchController.php&#10;upda&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="company&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Company.vue&#10;search&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Search.vue&#10;home&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Home.vue&#10;searc&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Search.vue&#10;head&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Parts/Header.vue&#10;store&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/store.js&#10;login&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/views/auth/login.blade.php&#10;header&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Parts/Header.vue&#10;controll&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/app/Http/Controllers/Controller.php&#10;WEB&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/routes/web.php&#10;compa&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Company.vue&#10;route\&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/router.js&#10;index.js&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/index.js&#10;Company&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/app/Http/Controllers/CompanyController.php&#10;web&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/routes/web.php&#10;AppSer&#9;null&#9;null&#10;sear&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Search.vue&#10;standard.scss&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/sass/standard.scss&#10;compan&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Company.vue&#10;Update&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/app/Console/Commands/UpdateInterprises.php&#10;oked.py&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/interprises_parsers/parsers/oked/oked.py&#10;secon&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/interprises_parsers/parsers/old_entity/second_last.sql&#10;company.v&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/resources/assets/js/components/Pages/Company.vue&#10;цуи&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/routes/web.php&#10;update&#9;FILE&#9;file:///home/rinzler/Desktop/sites/interprises.test/app/Console/Commands/UpdateInterprises.php&#10;package&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/package.json&#10;standa&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/sass/standard.scss&#10;route&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/js/router.js&#10;app&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/sass/app.scss&#10;web.php&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/routes/web.php&#10;index&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/public/index.php&#10;footer.scs&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/sass/footer.scss&#10;App.vu&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/js/components/App.vue&#10;Upda&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/app/Console/Commands/UpdateInterprises.php&#10;Com&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/app/Http/Controllers/CompanyController.php&#10;Home.vu&#9;FILE&#9;file://C:/OSPanel/domains/interprises.test/resources/assets/js/components/Pages/Home.vue&#10;upda&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GenericSQL&#10;Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../km.test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aifc.test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -484,18 +515,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/oked/files" />
-      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/oked" />
-      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/kato/files" />
-      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/legal_entity" />
-      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/old_entity" />
+      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity" />
+      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity" />
+      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity" />
+      <recent name="$PROJECT_DIR$/interprises_parsers/parsers" />
+      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/files" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/files" />
+      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files" />
       <recent name="$PROJECT_DIR$/interprises_parsers/parsers/oked/files" />
       <recent name="$PROJECT_DIR$/interprises_parsers/parsers/old_entity" />
       <recent name="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/21.08.17" />
-      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/20.11.17" />
-      <recent name="$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/19.06.17" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -560,12 +591,12 @@
       <workItem from="1524725980186" duration="39000" />
       <workItem from="1524742225195" duration="7269000" />
       <workItem from="1524979379098" duration="24057000" />
-      <workItem from="1525014153180" duration="30557000" />
+      <workItem from="1525014153180" duration="68697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149274000" />
+    <option name="totallyTimeSpent" value="187414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1400" y="-4" width="1920" height="1029" extended-state="6" />
@@ -582,11 +613,12 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.098527744" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.49603623" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4985465" visible="true" weight="0.21504803" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4985465" visible="true" weight="0.21824974" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.50145346" side_tool="true" weight="0.15351813" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -598,7 +630,6 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Python Console" order="8" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="right" id="R Graphics" order="3" />
@@ -640,255 +671,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/exbankrot_entity/stat_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="90" column="46" selection-end-line="245" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/terror_entity/stat_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/good_entity/stat_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="177" lean-forward="true" selection-start-line="177" selection-end-line="177" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/stat_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="103" column="43" lean-forward="true" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/after first files/second_last.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/after first files/history_second_last.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/after first files/date.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/only for first folder!/history_first.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="111" column="26" lean-forward="true" selection-start-line="111" selection-start-column="7" selection-end-line="111" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="70" selection-start-line="70" selection-end-line="70" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret column="42" selection-start-column="42" selection-end-column="42" />
-          <caret column="81" selection-start-column="81" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/16.10.17/legal_entity.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-23">
-          <caret column="97" selection-start-column="97" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/second_last.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret column="709" selection-start-column="709" selection-end-column="709" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/26.04.18/legal_entity.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="23">
-          <caret column="272" selection-start-column="272" selection-end-column="272" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/FirstCreation.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="5" column="208" selection-start-line="5" selection-start-column="201" selection-end-line="5" selection-end-column="208" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/new_second_last.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="8" column="287" selection-start-line="8" selection-start-column="287" selection-end-line="8" selection-end-column="287" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2645">
-          <caret line="107" selection-start-line="107" selection-end-line="129" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/history.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1180">
-          <caret line="24" column="90" selection-start-line="24" selection-start-column="90" selection-end-line="24" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/files/stat.gov.kz/legal_entity/29.04.18/csv/filials.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/files/05.02.18/legal_entity.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/filials.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="85" column="34" selection-start-line="85" selection-start-column="34" selection-end-line="85" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/kato/fileskato.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/tmp/kato.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/kato/files/katonew1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/kato/files/csv/kato.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/filials.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="61" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/bankrot_entity/stat_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="235" column="26" selection-start-line="221" selection-start-column="3" selection-end-line="235" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/legal_entity/stat_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="81" column="33" selection-start-line="80" selection-start-column="4" selection-end-line="81" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/init-changes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
-          <folding>
-            <element signature="e#49#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/old_entity/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/kato/kato.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="3" column="447" selection-start-line="3" selection-start-column="447" selection-end-line="3" selection-end-column="447" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/kato/kato.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="100" column="28" lean-forward="true" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
-          <folding>
-            <element signature="e#49#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/LieInterprise.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Interprise.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/History.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/kato.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/oked.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/oked/oked.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/oked/files/csv/oked.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -911,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/oked/oked.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="98" column="30" lean-forward="true" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/sass/interprise.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -932,34 +711,320 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Filial.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/oked/oked.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="98" column="30" selection-start-line="98" selection-start-column="30" selection-end-line="98" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_real.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/coderockr/php-query/src/phpQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/files/svod_urz_-1_za_2017_god.txtx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/files/svod_urz-1_za_1_kvartal_2018_goda_na_sayt.txtx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/files/csv/promiser_entity.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Promiser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/promiser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/promiser_entity/promiser.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/codex.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="3" column="58" selection-start-line="3" selection-start-column="58" selection-end-line="3" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/jur_exist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="130" column="48" selection-start-line="130" selection-start-column="48" selection-end-line="130" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/jur_exist_entity/jur_exist.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="3" column="95" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/codex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="91" column="79" selection-start-line="91" selection-start-column="79" selection-end-line="91" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interprises_parsers/parsers/codex_entity/files/csv/codex_entity.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="84" column="81" selection-start-line="84" selection-start-column="81" selection-end-line="84" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompanyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="40" column="57" selection-start-line="40" selection-start-column="57" selection-end-line="40" selection-end-column="57" />
+          <folding>
+            <element signature="e#40#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Codex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="2" lean-forward="true" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/channels.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/console.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Console/Commands/UpdateInterprises.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="116" column="54" selection-start-line="116" selection-start-column="54" selection-end-line="116" selection-end-column="54" />
+        <state relative-caret-position="260">
+          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="e#40#71#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CompanyController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
-          <caret line="43" column="68" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+        <state relative-caret-position="253">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#40#85#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#45#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#7#389#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/components/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="55" column="58" lean-forward="true" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="31" column="155" selection-start-line="31" selection-start-column="147" selection-end-line="31" selection-end-column="155" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Search.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="86" column="23" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Parts/Header.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Register.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="98" column="14" lean-forward="true" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="46" column="47" lean-forward="true" selection-start-line="46" selection-start-column="47" selection-end-line="46" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/components/Pages/Company.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="258" column="98" selection-start-line="258" selection-start-column="98" selection-end-line="258" selection-end-column="98" />
+        <state relative-caret-position="321">
+          <caret line="235" column="30" lean-forward="true" selection-start-line="235" selection-start-column="30" selection-end-line="235" selection-end-column="30" />
           <folding>
-            <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#p#6;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#p#7;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#i#0;n#button#0;n#div#1;n#div#3;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" />
           </folding>
         </state>
       </provider>
