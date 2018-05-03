@@ -4,9 +4,9 @@
 
         <keep-alive>
 
-                <router-view>
+            <router-view>
 
-                </router-view>
+            </router-view>
 
         </keep-alive>
 
@@ -18,13 +18,11 @@
     import axios from "axios";
 
     export default {
-        data(){
-            return {
-
-            }
+        data() {
+            return {}
         },
-        methods : {
-            getAuthStatus(){
+        methods: {
+            getAuthStatus() {
                 axios.get('/backend/get_auth_status')
                     .then((response) => {
                         this.$store.state.authState = response.data;
@@ -35,8 +33,9 @@
                     });
             },
         },
-        created(){
+        created() {
             this.getAuthStatus();
         }
     }
 </script>
+

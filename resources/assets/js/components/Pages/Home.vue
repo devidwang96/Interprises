@@ -44,16 +44,9 @@
         <div v-if="$store.state.authState == 'guest'" class="page-section section-reg text-center">
             <div class="container">
                 <h1 class="page-section__title">Чего ты ждешь? Зарегистрируйся скорее и получи расширенный доступ к нашим возможностям!</h1>
-                <form @submit.prevent="search">
-
-                    <div class="form-group">
-                        <input type="text"
-                               class="reg"
-                               placeholder="Введите ваш E-mail...">
-                        <input class="button button-primary" type="submit" value="Зарегистрироваться">
-                    </div>
-
-                </form>
+                <router-link v-if="$store.state.authState == 'guest'" class="button button-primary" :to="{ name: 'register'}">
+                    Зарегистрироваться
+                </router-link>
             </div>
         </div>
 
